@@ -1,4 +1,7 @@
 import { SEO } from "../../utils/seo";
+import HeroBanner from "../4-library/herobanner";
+import PriceSection from "../4-library/pricing-section";
+import ServicesSection from "../4-library/services-section";
 import { WorkWithUs } from "../4-library/work-with-us";
 
 export function Home() {
@@ -8,6 +11,9 @@ export function Home() {
 
         <div>Home</div>
 
+        <HeroBanner />
+        <ServicesSection />
+        <PriceSection />
         <WorkWithUs />
     </>
   )
