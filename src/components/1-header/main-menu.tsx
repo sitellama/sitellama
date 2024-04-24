@@ -93,22 +93,22 @@ export function MainMenu() {
 function MenuBody({ closeMenu, loc, className }: { closeMenu: () => void; loc: Location; className?: string; }) {
     return (
         <ul className={cn(className)}>
-            <li onClick={closeMenu}>
+            <li className="w-screen flex justify-center" onClick={closeMenu}>
                 <Link to="/" className={itemClasses("/", loc)}>
                     Home
                 </Link>
             </li>
-            <li onClick={closeMenu}>
+            <li className="w-screen flex justify-center" onClick={closeMenu}>
                 <Link to="/services" className={itemClasses("/services", loc)}>
                     Services
                 </Link>
             </li>
-            <li onClick={closeMenu}>
+            <li className="w-screen flex justify-center" onClick={closeMenu}>
                 <Link to="/about" className={itemClasses("/about", loc)}>
                     About
                 </Link>
             </li>
-            <li onClick={closeMenu}>
+            <li className="w-screen flex justify-center" onClick={closeMenu}>
                 <Link to="/contact" className={itemClasses("/contact", loc)}>
                     Contact
                 </Link>
