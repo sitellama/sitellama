@@ -1,7 +1,7 @@
 function PricingSection() {
   return (
     <section className="font-sans bg-gray-100">
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="min-h-full py-24 flex justify-center items-center">
         <div>
           <div className="text-center font-semibold">
             <h1 className="text-5xl">
