@@ -13,13 +13,13 @@ function HeroBanner() {
   }, []);
 
   return (
-    <div className="bg-white py-16 md:py-32">
+    <div className="bg-gradient-to-r from-purple-600 to-blue-400 py-16 md:py-32">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-evenly">
         <div className="">
-          <div className={`text-left md:text-left text-white md:mt-0 mt-10 bg-purple-400 rounded-[60px] px-3 ${isLoaded ? 'opacity-100 transition-opacity duration-300' : 'opacity-0'} delay-[2000ms]`}>
+          <div className={`text-left md:text-left text-black md:mt-0 mt-10 px-3 ${isLoaded ? 'opacity-100 transition-opacity duration-300' : 'opacity-0'} delay-[2000ms]`}>
             <h1 className="text-[120px] font-mono font-bold mb-4">Site Llama</h1>
           </div>
-          <div className={`text-left md:text-left text-white md:mt-0 mt-10 bg-purple-400 rounded-[60px] px-3 ${isLoaded ? 'opacity-100 transition-opacity duration-300' : 'opacity-0'}`}>
+          <div className={`text-left md:text-center text-white md:mt-0 mt-10 px-3 ${isLoaded ? 'opacity-100 transition-opacity duration-300' : 'opacity-0'}`}>
             <p className="text-[40px] font-mono font-bold mb-8">Need a Website? No Problama!</p>
           </div>
         </div>

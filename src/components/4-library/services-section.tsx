@@ -4,17 +4,17 @@ function ServicesSection() {
     {
         imageUrl: "src/assets/services-branding.png",
         title: "Branding",
-        description: "Lorem ipsum dolor sit amet, #brands."
+        description: "Ut enim ad minim veniam, quis nostrud exercitation"
     },
     {
         imageUrl: "src/assets/services-hosting.png",
         title: "Hosting",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        description: "Ut enim ad minim veniam, quis nostrud exercitation"
     },
     {
         imageUrl: "src/assets/services-web-design.png",
         title: "Web Design",
-        description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description: "Ut enim ad minim veniam, quis nostrud exercitation"
     },
     {
         imageUrl: "src/assets/services-web-development.png",
@@ -40,7 +40,7 @@ function ServicesSection() {
       <div className="h-full relative shadow-2x1 shadow-purple-900 overflow-hidden group rounded-3xl bg-purple-400">
         <div className="absolute group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-500 trasition-opacity opacity-0 hover:opacity-100 duration-200">
           <div className="w-full h-full p-3 relative">
-            <div className="absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500">
+            <div className="absolute bottom-0 group-hover:bottom-[40%] text-white text-center transition-all ease-in-out duration-500">
               <h2 className="text-3xl text-decoration-line: underline font-bold text-orange-300 mb-0 pb-1">{title}</h2>
               <p className="text-lg font-light text-white">{description}</p>
             </div>
@@ -61,7 +61,7 @@ function ServicesSection() {
           </span>{' '}
           can do for you!
         </h2>
-        <p className="mb-20 text-lg text-gray-900">
+        <p className="mb-20 text-lg text-gray-900 py-3">
           We make your ideas with a whole Llama love!
         </p>
 
