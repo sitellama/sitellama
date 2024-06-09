@@ -12,12 +12,11 @@ export function Home() {
         <>
             <SEO title="Home Page" description="This is the home page" href="/" />
 
-            <div>Home</div>
-
             <HeroBanner />
             <ServicesSection />
             <PriceSection />
             <WorkWithUs />
+
             <PortfolioImgLeft
                 projectImgSrc={s6Horses}
                 projectImgAlt="s6 horses website"
@@ -25,6 +24,7 @@ export function Home() {
                 projectQuickFacts="Website Design | Custom Development | Editable Content"
                 projectDesc="This is a description - yay! We did so good!"
             />
+            
             <PortfolioImgRight
                 projectImgSrc={s6Horses}
                 projectImgAlt="s6 horses website"

@@ -1,23 +1,19 @@
 export function Footer() {
     return (
-        <footer>
-            <Copyright />
-        </footer>
+        <Copyright />
     );
 }
 
 function Copyright() {
     return (
         <div className='bg-gray-800 text-white p-4'>
-            <p className="small-text">
+            <p className='text-center'>
                 <a
                     href="https://sitellama.com/"
-                    target="_blank"
-                >
-                    Site by Sitellama
+                    target="_blank">
+                    Site by Sitellama LLC {new Date().getFullYear()}©
                 </a>
             </p>
-            {/* <p className='text-center'>© {new Date().getFullYear()} Tailwindcss</p> */}
         </div>
     );
 }

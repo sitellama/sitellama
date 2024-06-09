@@ -1,9 +1,11 @@
 import { RouteObject, createBrowserRouter } from "react-router-dom";
 import { Services } from "../components/2-main/services";
 import { Root } from "./root";
-import { About } from "@/components/2-main/about/about";
+// import { About } from "@/components/2-main/about/about";
 import { Contact } from "../components/2-main/contact";
 import { Home } from "../components/2-main/home";
+import { Pricing } from "@/components/2-main";
+import { Portfolio } from "@/components/2-main/portfolio";
 
 const routes: RouteObject[] = [
     {
@@ -11,12 +13,16 @@ const routes: RouteObject[] = [
         element: <Home />,
     },
     {
-        path: "/about",
-        element: <About />,
-    },
-    {
         path: "/services",
         element: <Services />,
+    },
+    {
+        path: "/portfolio",
+        element: <Portfolio />,
+    },
+    {
+        path: "/pricing",
+        element: <Pricing />,
     },
     {
         path: "/contact",

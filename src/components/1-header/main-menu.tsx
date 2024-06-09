@@ -12,7 +12,7 @@ bg-slate-300 \
 hover:bg-sky-500 hover:text-white \
 ";
 
-const linkActiveClasses = "!bg-sky-700";
+const linkActiveClasses = "!bg-white-700";
 
 const itemClasses = (path: string, loc: Location): string => {
     const isActive = path === loc.pathname;
@@ -21,17 +21,15 @@ const itemClasses = (path: string, loc: Location): string => {
 
 const menuRowClasses = "\
 px-4 py-8 \
+\
 hidden \
 sm:flex \
-bg-red-500 \
-\
-flex-row \
-\
-items-center \
-justify-end \
-space-y-8 \
-sm:space-y-0 \
-sm:gap-2";
+space-x-4 \
+";
+
+const menuRowClasses2 = "\
+hidden w-full md:block md:w-auto \
+";
 
 const menuColClasses = "\
 sm:hidden \
@@ -41,7 +39,6 @@ bg-green-500 \
 flex \
 flex-col \
 items-center \
-\
 ";
 
 export function MainMenu() {
@@ -63,7 +60,7 @@ export function MainMenu() {
 
             <MenuBody closeMenu={closeMenu} loc={loc} className={menuRowClasses} />
 
-            <div className="relative py-4 flex justify-end">
+            <div className="relative flex justify-end">
                 <div className="" ref={ref}>
                     <button
                         className="sm:hidden"
@@ -93,27 +90,41 @@ export function MainMenu() {
 function MenuBody({ closeMenu, loc, className }: { closeMenu: () => void; loc: Location; className?: string; }) {
     return (
         <ul className={cn(className)}>
-            <li className="w-screen flex justify-center" onClick={closeMenu}>
-                <Link to="/" className={itemClasses("/", loc)}>
+            <li>
+                <a
+                    href="/"
+                    className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">
                     Home
-                </Link>
+                </a>
             </li>
-            <li className="w-screen flex justify-center" onClick={closeMenu}>
-                <Link to="/services" className={itemClasses("/services", loc)}>
+            <li>
+                <a
+                    href="/Services"
+                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                     Services
-                </Link>
+                </a>
             </li>
-            <li className="w-screen flex justify-center" onClick={closeMenu}>
-                <Link to="/about" className={itemClasses("/about", loc)}>
-                    About
-                </Link>
+            <li>
+                <a
+                    href="/Portfolio"
+                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    Portfolio
+                </a>
             </li>
-            <li className="w-screen flex justify-center" onClick={closeMenu}>
-                <Link to="/contact" className={itemClasses("/contact", loc)}>
+            <li>
+                <a
+                    href="/Pricing"
+                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    Pricing
+                </a>
+            </li>
+            <li>
+                <a
+                    href="/Contact"
+                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                     Contact
-                </Link>
+                </a>
             </li>
         </ul>
-
     );
 }
