@@ -1,82 +1,53 @@
-function ServicesSection() {
-  // Define service data
-  const services = [
-    {
-        imageUrl: "src/assets/services-branding.png",
-        title: "Branding",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation"
-    },
-    {
-        imageUrl: "src/assets/services-hosting.png",
-        title: "Hosting",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation"
-    },
-    {
-        imageUrl: "src/assets/services-web-design.png",
-        title: "Web Design",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation"
-    },
-    {
-        imageUrl: "src/assets/services-web-development.png",
-        title: "Web Development",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation"
-    },
-    {
-        imageUrl: "src/assets/services-maintenance.png",
-        title: "Maintenence",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation"
-    },
-    {
-        imageUrl: "src/assets/services-revamp.png",
-        title: "Site Revamp",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation"
-    },
-      
-  ];
+import React from 'react';
 
-  // ServiceCard component
-  const ServiceCard = ({ imageUrl, title, description }) => (
-    <a href="#" className="shadow-blue-400 shadow-lg relative bg-black rounded-3xl">
-      <div className="h-full relative shadow-2x1 shadow-purple-900 overflow-hidden group rounded-3xl bg-purple-400">
-        <div className="absolute group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-500 trasition-opacity opacity-0 hover:opacity-100 duration-200">
-          <div className="w-full h-full p-3 relative">
-            <div className="absolute bottom-0 group-hover:bottom-[40%] text-white text-center transition-all ease-in-out duration-500">
-              <h2 className="text-3xl text-decoration-line: underline font-bold text-orange-300 mb-0 pb-1">{title}</h2>
-              <p className="text-lg font-light text-white">{description}</p>
-            </div>
+function ServicesSection() {
+  return (
+    <div className="bg-zinc-100 p-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-blue-500 text-white p-6 rounded-lg">
+            <img src="https://placehold.co/100x100" alt="icon" className="mb-4 mx-auto" />
+            <h2 className="text-xl font-bold mb-2">TIME TO STAND OUT FROM THE HERD</h2>
+            <p>We make small businesses look good. Sure, you could grab a template and sprinkle in some keywords, but what about site speed? Mobile-friendly design? SEO? Sitellama takes care of the details so you can focus on what you do best - running your business!</p>
+          </div>
+          <div className="bg-blue-700 text-white p-6 rounded-lg">
+            <img src="https://placehold.co/100x100" alt="icon" className="mb-4 mx-auto" />
+            <h2 className="text-xl font-bold mb-2">ALL BUSINESS, NO DRAMA</h2>
+            <p>There's no drama with Sitellama. Our clients' sites are built with purpose. Whether you need a simple landing page or a jaw-dropping, multi-page masterpiece to showcase your work, Sitellama creates custom websites that prioritize your business's needs.</p>
           </div>
         </div>
-        <img src={imageUrl} className="w-full z-0 h-full object-fill example" alt="Service" />
-      </div>
-    </a>
-  );
-
-  return (
-    <section className="sm:py-12 lg:py-16 z-40 relative">
-      <div className="container w-[1200px] mx-auto">
-        <h2 className="text-3xl font-light text-black sm:text-4xl lg:text-5xl leading-8">
-          What can{' '}
-          <span className="block w-full font-light text-transparent bg-clip-text text-purple-500 text-decoration-line: underline lg:inline">
-            Site Llama
-          </span>{' '}
-          can do for you!
-        </h2>
-        <p className="mb-20 text-lg text-gray-900 py-3">
-          We make your ideas with a whole Llama love!
-        </p>
-
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 rounded">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              imageUrl={service.imageUrl}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
+        <div className="text-center mt-8">
+          <h1 className="text-2xl font-bold text-teal-600">Llama Technology</h1>
+          <p className="text-zinc-700 mt-2">Not sure what you need? Send us a message and we'll help you figure it out!</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-bold mb-2">Branding</h3>
+            <p>From logos to establishing new brand identities, our graphic design team does it all.</p>
+          </div>
+          <div className="bg-purple-500 text-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-bold mb-2">Web Development</h3>
+            <p>We specialize in building the backend bells and whistles that result in superior site performance.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-bold mb-2">Web Design</h3>
+            <p>All projects are made using best practices for accessibility and user experience.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-bold mb-2">Web Hosting</h3>
+            <p>We offer fast, reliable hosting plans to boost your site's performance.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-bold mb-2">Maintenance</h3>
+            <p>Create a custom maintenance package and pass off those time-sinking tasks.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-lg font-bold mb-2">Site Redesign</h3>
+            <p>Have a website already? It's time for an update! Let us help!</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

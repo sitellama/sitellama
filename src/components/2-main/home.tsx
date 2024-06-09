@@ -6,6 +6,7 @@ import { WorkWithUs } from "../4-library/work-with-us";
 import { PortfolioImgLeft } from "../4-library/portfolio-img-left";
 import { PortfolioImgRight } from "../4-library/portfolio-img-right";
 import s6Horses from "../../assets/placeholder-hero-img.webp";
+import LlamaTech from "../4-library/llamatech";
 
 export function Home() {
     return (
@@ -16,6 +17,7 @@ export function Home() {
 
             <HeroBanner />
             <ServicesSection />
+            <LlamaTech />
             <PriceSection />
             <WorkWithUs />
             <PortfolioImgLeft
