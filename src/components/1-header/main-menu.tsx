@@ -1,8 +1,9 @@
 import { CSSProperties, useRef, useState } from "react";
-import { Link, Location, useLocation } from "react-router-dom";
+import { Link, Location, NavLink, useLocation } from "react-router-dom";
 import { useClickAway } from "react-use";
 import { classNames, cn } from "@/utils";
 import { IconCross, IconHamburger } from "@/ui";
+import { createPortal } from "react-dom";
 
 const linkClasses = "\
 px-2 py-3 text-sm \
@@ -20,25 +21,20 @@ const itemClasses = (path: string, loc: Location): string => {
 };
 
 const menuRowClasses = "\
-px-4 py-8 \
+py-8 \
 \
 hidden \
 sm:flex \
-space-x-4 \
-";
-
-const menuRowClasses2 = "\
-hidden w-full md:block md:w-auto \
+1space-x-4 \
 ";
 
 const menuColClasses = "\
+w-full \
 sm:hidden \
 \
 bg-green-500 \
 \
-flex \
-flex-col \
-items-center \
+flex flex-col items-center \
 ";
 
 export function MainMenu() {
@@ -57,18 +53,15 @@ export function MainMenu() {
 
     return (
         <div className="z-50">
+            <MenuBody className={menuRowClasses} closeMenu={closeMenu} loc={loc} />
 
-            <MenuBody closeMenu={closeMenu} loc={loc} className={menuRowClasses} />
-
-            <div className="relative flex justify-end">
-                <div className="" ref={ref}>
+            <div className="relative">
+                <div>
                     <button
                         className="sm:hidden"
                         onClick={() => setIsMenuOpen((v) => !v)}
                         role="navigation"
-                        aria-label="Main Menu"
-                        // aria-state={isMenuOpen ? "open" : "closed"}
-                        type="button"
+                        aria-label="Main Menu" // aria-state={isMenuOpen ? "open" : "closed"}
                     >
                         {isMenuOpen
                             ? <IconCross className="size-7 fill-red-500" />
@@ -76,55 +69,82 @@ export function MainMenu() {
                         }
                     </button>
 
-                    {isMenuOpen && (
-                        <div className="absolute right-0 top-full flex justify-end">
-                            <MenuBody closeMenu={closeMenu} loc={loc} className={menuColClasses} />
-                        </div>
-                    )}
+                        {isMenuOpen &&
+                            createPortal(
+                                <div ref={ref} className="w-full absolute right-0 top-0 flex justify-end">
+                                    <MenuBody className={menuColClasses} closeMenu={closeMenu} loc={loc} />
+                                </div>, document.body
+                            )
+                        }
                 </div>
             </div>
         </div>
     );
 }
 
+const c2Classes = "\
+block \
+px-3 \
+py-2 \
+text-2xl \
+\
+text-gray-900 \
+dark:text-white \
+dark:hover:bg-gray-700 \
+dark:hover:text-white \
+\
+sm:hover:bg-gray-100 \
+hover:bg-transparent \
+\
+1border-red-500 1border \
+\
+\
+1md:p-0 \
+1md:border-0 \
+1md:hover:bg-transparent \
+1md:hover:text-blue-700 \
+1md:dark:hover:text-blue-500 \
+1md:dark:hover:bg-transparent \
+\
+select-none \
+\
+";
+
+function OurLink({ label, to, loc }: { label: string; to: string; loc: Location; }) {
+    const isActive = to === loc.pathname;
+    return (
+        <li>
+            {/* <Link to={to} className={itemClasses(to, loc)} aria-current={isActive ? "page" : undefined}>
+                {label}
+            </Link> */}
+
+            <a
+                href={to}
+                className={classNames(c2Classes, isActive && "text-white")}
+                target="_blank"
+                aria-current={isActive ? "page" : undefined}
+                onClick={(e) => {
+                    e.preventDefault();
+                    console.log("clicked");
+
+                    window.location.href = to;
+                }
+                }
+            >
+                {label}
+            </a>
+        </li>
+    );
+}
+
 function MenuBody({ closeMenu, loc, className }: { closeMenu: () => void; loc: Location; className?: string; }) {
     return (
-        <ul className={cn(className)}>
-            <li>
-                <a
-                    href="/"
-                    className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a
-                    href="/Services"
-                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                    Services
-                </a>
-            </li>
-            <li>
-                <a
-                    href="/Portfolio"
-                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                    Portfolio
-                </a>
-            </li>
-            <li>
-                <a
-                    href="/Pricing"
-                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                    Pricing
-                </a>
-            </li>
-            <li>
-                <a
-                    href="/Contact"
-                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                    Contact
-                </a>
-            </li>
+        <ul className={className}>
+            <OurLink label="Home" to="/" loc={loc} />
+            <OurLink label="Services" to="/services" loc={loc} />
+            <OurLink label="Portfolio" to="/portfolio" loc={loc} />
+            <OurLink label="Pricing" to="/pricing" loc={loc} />
+            <OurLink label="Contact" to="/contact" loc={loc} />
         </ul>
     );
 }
