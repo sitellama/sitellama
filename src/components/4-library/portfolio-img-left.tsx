@@ -11,9 +11,9 @@ export function PortfolioImgLeft({
         projectDesc: string;
     }) {
     return (
-        <div className="flex flex-col items-center w-screen sm:flex-row bg-gray-400">
-            <img src={projectImgSrc} alt={projectImgAlt} className="w-1/2 max-h-[700px] object-cover object-[center_top]" />
-            <div className="w-1/2 p-5 bg-gray-400" >
+        <div className="mx-auto max-w-6xl grid grid-cols-2">
+            <img src={projectImgSrc} alt={projectImgAlt} />
+            <div className="p-5 bg-gray-400">
                 <h3>{projectName}</h3>
                 <p className="uppercase">{projectQuickFacts}</p>
                 <p>{projectDesc}</p>
