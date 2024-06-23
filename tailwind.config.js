@@ -23,6 +23,10 @@ export default {
                 'grad-green-bottom': '#a0d48a',
                 'grad-blue-top': '#004aad',
                 'grad-blue-bottom': '#0584d4',
+            },
+            content: {
+                'arrow-right': 'url("src/assets/arrow-right.png")',
+                'arrow-right-purple': 'url("src/assets/arrow-right-purple.png")',
             }
         },
     },

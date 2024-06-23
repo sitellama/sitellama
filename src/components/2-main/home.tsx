@@ -31,12 +31,14 @@ export function Home() {
                 projectOneName="S6 Ranch"
                 projectOneQuickFacts="Website Design | Custom Development | Editable Content"
                 projectOneDesc="This is a description - yay! We did so good!"
+                projectOneDescSR="for S6 Ranch"
 
                 projectTwoImgSrc={kcrafts}
                 projectTwoImgAlt="s6 horses website"
                 projectTwoName="S6 Horses"
                 projectTwoQuickFacts="Website Design | Custom Development | Editable Content"
                 projectTwoDesc="This is a description - yay! We did so good!"
+                projectTwoDescSR="for Kcrafts"
             />
         </>
     );
