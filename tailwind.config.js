@@ -5,7 +5,13 @@ export default {
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                'sans': ['Raleway'],
+                'logo': ['Inter'],
+                'headings': ['Montserrat'],
+            },
+        },
     },
     plugins: [
         require("./tailwind/tailwind-plugin-debug-screens"),

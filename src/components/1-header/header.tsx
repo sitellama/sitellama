@@ -3,7 +3,7 @@ import { MainMenu } from "./main-menu";
 import logoImg from "@/assets/llamamascot1.webp";
 import { classNames } from "@/utils";
 
-const logoClasses = "text-2xl font-semibold dark:text-white uppercase";
+const logoClasses = "font-logo text-2xl font-semibold dark:text-white uppercase";
 
 export function Header({ className, ...rest }: HTMLAttributes<HTMLDivElement>) {
     return (<>
