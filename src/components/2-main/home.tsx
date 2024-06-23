@@ -8,6 +8,7 @@ import s6Horses from "../../assets/placeholder-hero-img.webp";
 import LlamaTech from "../4-library/llamatech";
 import ServicesDescription from "../4-library/service-descriptions";
 import ServiceTypes from "../4-library/services-types";
+import Carousel from "../4-library/carousel";
 
 export function Home() {
     return (
@@ -18,6 +19,7 @@ export function Home() {
             <ServicesDescription />
             <ServiceTypes />
             <LlamaTech />
+            <Carousel />
             <PriceSection />
             <WorkWithUs />
 
