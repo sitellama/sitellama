@@ -6,6 +6,11 @@ export default {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                'sans': ['Raleway'],
+                'logo': ['Inter'],
+                'headings': ['Montserrat'],
+            },
             colors: {
                 'brand-blue': '#0077C2',
                 'brand-purple': '#9D3BAD',

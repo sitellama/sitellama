@@ -4,7 +4,7 @@ function PricingSection() {
       <div className="min-h-full py-24 flex justify-center items-center">
         <div>
           <div className="text-center font-semibold">
-            <h1 className="text-5xl">
+            <h1 className="bg-blue text-5xl font-headings">
               <span className="text-purple-400 tracking-wide">Site Llama </span>
               <span>Plans</span>
             </h1>
