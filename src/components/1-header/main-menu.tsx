@@ -64,8 +64,8 @@ export function MainMenu() {
                         aria-label="Main Menu" // aria-state={isMenuOpen ? "open" : "closed"}
                     >
                         {isMenuOpen
-                            ? <IconCross className="size-7 fill-red-500" />
-                            : <IconHamburger className="size-7 fill-red-500" />
+                            ? <IconCross className="size-7 fill-white" />
+                            : <IconHamburger className="size-7 fill-white" />
                         }
                     </button>
 
