@@ -41,11 +41,11 @@ export function PortfolioFeatured(
             </div>
 
 
-            <div className="bg-gradient-to-br from-grad-blue-top to-brand-teal pt-24">
+            <div className="bg-gradient-to-br from-grad-blue-top to-brand-teal pt-24 pb-12">
                 <div>
                     <div className="mx-auto flex flex-col md:flex-row items-center max-w-[1200px]">
-                        <img src={projectOneImgSrc} alt={projectOneImgAlt} className="md:w-3/6" />
-                        <div className="p-5">
+                        <img src={projectOneImgSrc} alt={projectOneImgAlt} className="w-11/12 md:w-3/6" />
+                        <div className="p-5 text-center md:text-left">
                             <p className="uppercase text-white text-sm">{projectOneQuickFacts}</p>
                             <h3 className="text-white font-headings text-xl  py-4">{projectOneName}</h3>
                             <p className="text-white">{projectOneDesc}</p>
@@ -55,8 +55,8 @@ export function PortfolioFeatured(
                 </div>
                 <div>
                     <div className="mx-auto flex flex-col md:flex-row items-center max-w-[1200px]">
-                        <img src={projectTwoImgSrc} alt={projectTwoImgAlt} className="md:w-3/6 md:order-2 mt-[100px] md:mt-[0px]" />
-                        <div className="p-5">
+                        <img src={projectTwoImgSrc} alt={projectTwoImgAlt} className="w-11/12 md:w-3/6 md:order-2 mt-[100px] md:mt-[0px]" />
+                        <div className="p-5 text-center md:text-left">
                             <p className="uppercase text-white text-sm">{projectTwoQuickFacts}</p>
                             <h3 className="text-white font-headings text-xl  py-4">{projectTwoName}</h3>
                             <p className="text-white">{projectTwoDesc}</p>

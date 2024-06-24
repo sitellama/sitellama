@@ -15,6 +15,6 @@
     @apply text-brand-purple uppercase;
   }
   .btn {
-    @apply inline-block px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-right-purple after:inline-block after:pl-4 after:align-middle;
+    @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-right-purple after:inline-block after:pl-4 after:align-middle hover:scale-105 transition-transform;
   }
 }
