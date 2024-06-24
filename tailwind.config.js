@@ -27,11 +27,16 @@ export default {
             content: {
                 'arrow-right': 'url("src/assets/arrow-right.png")',
                 'arrow-right-purple': 'url("src/assets/arrow-right-purple.png")',
-            }
+            },
+            listStyleImage: {
+                "checkmark": 'url("./src/assets/check.svg")',
+                // "checkmark": 'url("./src/assets/smileyface.svg")',
+                // "checkmark": 'url("./src/assets/smileyface-copy.svg")',
+                "cross": 'url("./src/assets/cross.svg")',
+            },
         },
     },
     plugins: [
         require("./tailwind/tailwind-plugin-debug-screens"),
     ],
 }
-

@@ -1,7 +1,6 @@
 import { SEO } from "../../utils/seo";
 import HeroBanner from "../4-library/herobanner";
 import PriceSection from "../4-library/pricing-section";
-import { WorkWithUs } from "../4-library/work-with-us";
 import { PortfolioFeatured } from "../4-library/portfolio-featured";
 import recentWork from "../../assets/recent-work.png";
 import s6Horses from "../../assets/portfolio1.png";
@@ -16,11 +15,12 @@ export function Home() {
             <SEO title="Home Page" description="This is the home page" href="/" />
 
             <HeroBanner />
+            
             <ServicesDescription />
+
             <ServiceTypes />
+
             <LlamaTech />
-            <PriceSection />
-            <WorkWithUs />
 
             <PortfolioFeatured
                 recentWork={recentWork}
@@ -40,6 +40,8 @@ export function Home() {
                 projectTwoDesc="This is a description - yay! We did so good!"
                 projectTwoDescSR="for Kcrafts"
             />
+
+            <PriceSection />
         </>
     );
 }
