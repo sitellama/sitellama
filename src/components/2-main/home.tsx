@@ -39,7 +39,7 @@ export function Home() {
                 projectTwoImgAlt="screenshots from Kcrafts website"
                 projectTwoName="Kcrafts"
                 projectTwoQuickFacts="Wordpress &#x2022; Branding &#x2022; E-commerce &#x2022; Blog"
-                projectTwoDesc="Kcrafts handcrafts beautiful crystal jewelry and the owner wanted a branded, sales-driven website. We dove deep into SEO and marketing strategy to deliver a complete branding suite and a top-notch e-commerce site."
+                projectTwoDesc="Kcrafts handmakes beautiful crystal jewelry. The owner was looking for a branded, sales-driven website. We dove deep into SEO and marketing strategy to deliver a complete branding suite and a top-notch e-commerce site."
                 projectTwoDescSR="for Kcrafts"
             />
             <PriceSection />

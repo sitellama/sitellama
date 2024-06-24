@@ -28,10 +28,10 @@ function PricingSection() {
     return (
         <section className="bg-gray-100 flex flex-col items-center justify-center">
 
-            <h1 className="mb-24 bg-blue text-5xl font-semibold font-headings">
+            <h2 className="mb-24 bg-blue text-5xl font-semibold font-headings">
                 <span className="text-brand-purple tracking-wide uppercase">SiteLlama </span>
                 <span>Plans</span>
-            </h1>
+            </h2>
 
             {/* <div className="px-12 w-full grid place-content-center grid-cols-1 md:grid-cols-3 gap-4"> */}
             <div className="px-12 w-full flex flex-col md:flex-row items-center justify-center gap-4">
@@ -39,30 +39,63 @@ function PricingSection() {
                 {/* Basic Card */}
                 <div className={cardClasses}>
                     <PriceTag label="Basic" price={10} />
-                    <div className="text-2xl bg-white rounded-3xl">
-                        <ListItem label="You get this" />
-                        <ListItem label="You also get this!" />
-                        <ListItem label="But also this too!!!!!!!!!!!!" ok={false} />
+                    <div className="text-2xl bg-white rounded-3xl p-8">
+                        <ListItem label="Hosting & Domain migration" />
+                        <ListItem label="Single Page Website" />
+                        <ListItem label="3 Design Revisions" ok={false} />
+                        <ListItem label="Social Media Integration" />
+                        <ListItem label="Mobile Friendly Design" />
+                        <ListItem label="1 Contact Form" />
+                        <ListItem label="Integrated Google Analytics" />
+                        <ListItem label="Web Strategy - Sale Funnel" />
+                        <ListItem label="Web Strategy - SEO" />
+                        <ListItem label="Web Strategy - KPI's" />
+                        <ListItem label="GDPR/CCPA Compliance" />
+                        <ListItem label="WCAG level A Compliance" />
+                        <ListItem label="Launch Day Support" />
+                        <ListItem label="1 Week Follow Up" ok={false} />
                     </div>
                 </div>
 
                 {/* Startup Card */}
                 <div className={cardClasses}>
                     <PriceTag label="Enterprise" price={10} />
-                    <div className="text-2xl bg-white rounded-3xl">
-                        <ListItem label="You get this" />
-                        <ListItem label="You also get this!" />
-                        <ListItem label="But also this too!!!!!!!!!!!!" ok={false} />
+                    <div className="text-2xl bg-white rounded-3xl p-8">
+                        <ListItem label="Hosting & Domain migration" />
+                        <ListItem label="Single Page Website" />
+                        <ListItem label="3 Design Revisions" ok={false} />
+                        <ListItem label="Social Media Integration" />
+                        <ListItem label="Mobile Friendly Design" />
+                        <ListItem label="1 Contact Form" />
+                        <ListItem label="Integrated Google Analytics" />
+                        <ListItem label="Web Strategy - Sale Funnel" />
+                        <ListItem label="Web Strategy - SEO" />
+                        <ListItem label="Web Strategy - KPI's" />
+                        <ListItem label="GDPR/CCPA Compliance" />
+                        <ListItem label="WCAG level A Compliance" />
+                        <ListItem label="Launch Day Support" />
+                        <ListItem label="1 Week Follow Up" ok={false} />
                     </div>
                 </div>
 
                 {/* Enterprise Card */}
                 <div className={cardClasses}>
                     <PriceTag label="Business" price={10} />
-                    <div className="text-2xl bg-white rounded-3xl">
-                        <ListItem label="You get this" />
-                        <ListItem label="You also get this!" />
-                        <ListItem label="But also this too!!!!!!!!!!!!" ok={false} />
+                    <div className="text-2xl bg-white rounded-3xl p-8">
+                        <ListItem label="Hosting & Domain migration" />
+                        <ListItem label="Single Page Website" />
+                        <ListItem label="3 Design Revisions" ok={false} />
+                        <ListItem label="Social Media Integration" />
+                        <ListItem label="Mobile Friendly Design" />
+                        <ListItem label="1 Contact Form" />
+                        <ListItem label="Integrated Google Analytics" />
+                        <ListItem label="Web Strategy - Sale Funnel" />
+                        <ListItem label="Web Strategy - SEO" />
+                        <ListItem label="Web Strategy - KPI's" />
+                        <ListItem label="GDPR/CCPA Compliance" />
+                        <ListItem label="WCAG level A Compliance" />
+                        <ListItem label="Launch Day Support" />
+                        <ListItem label="1 Week Follow Up" ok={false} />
                     </div>
                 </div>
 
