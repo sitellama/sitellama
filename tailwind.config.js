@@ -11,6 +11,11 @@ export default {
                 'logo': ['Inter'],
                 'headings': ['Montserrat'],
             },
+            fontSize: {
+                sm: '1rem',
+                base: '1.125rem',
+                xl: '1.5rem',
+            },
             colors: {
                 'brand-blue': '#0077C2',
                 'brand-purple': '#9D3BAD',
