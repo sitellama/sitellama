@@ -36,31 +36,32 @@ export function PortfolioFeatured(
         <section className="">
 
             <div>
-                <img src={recentWork} alt={recentWorkAlt} className="-mb-12 mx-auto max-w-[1200px]" />
+                <h2 className="font-headings text-xl text-center my-8">Recent Work</h2>
+                <img src={recentWork} alt={recentWorkAlt} className="-mb-12 mx-auto w-full max-w-[1200px]" />
             </div>
 
 
-            <div className="bg-gradient-to-br from-grad-blue-top to-grad-blue-bottom pt-24">
+            <div className="bg-gradient-to-br from-grad-blue-top to-brand-teal pt-24">
                 <div>
-                    <div className="mx-auto flex">
-                        <img src={projectOneImgSrc} alt={projectOneImgAlt} />
+                    <div className="mx-auto flex flex-col md:flex-row items-center max-w-[1200px]">
+                        <img src={projectOneImgSrc} alt={projectOneImgAlt} className="md:w-3/6" />
                         <div className="p-5">
-                            <h3>{projectOneName}</h3>
-                            <p className="uppercase">{projectOneQuickFacts}</p>
-                            <p>{projectOneDesc}</p>
-                            <a className="bg-brand-green  btn">Visit Live Site<span className="sr-only">{projectOneDescSR}</span></a>
+                            <p className="uppercase text-white text-sm">{projectOneQuickFacts}</p>
+                            <h3 className="text-white font-headings text-xl  py-4">{projectOneName}</h3>
+                            <p className="text-white">{projectOneDesc}</p>
+                            <a className="bg-brand-green btn" target="_blank" href="https://s6horses.com/">Visit Live Site<span className="sr-only">{projectOneDescSR}</span></a>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="mx-auto max-w-6xl grid grid-cols-2">
-                        <div className="header3 p-5">
-                            <h3>{projectTwoName}</h3>
-                            <p className="uppercase">{projectTwoQuickFacts}</p>
-                            <p>{projectTwoDesc}</p>
-                            <a className="bg-brand-green-light btn">Visit Live Site<span className="sr-only">{projectTwoDescSR}</span></a>
+                    <div className="mx-auto flex flex-col md:flex-row items-center max-w-[1200px]">
+                        <img src={projectTwoImgSrc} alt={projectTwoImgAlt} className="md:w-3/6 md:order-2 mt-[100px] md:mt-[0px]" />
+                        <div className="p-5">
+                            <p className="uppercase text-white text-sm">{projectTwoQuickFacts}</p>
+                            <h3 className="text-white font-headings text-xl  py-4">{projectTwoName}</h3>
+                            <p className="text-white">{projectTwoDesc}</p>
+                            <a className="bg-brand-green-light btn" target="_blank" href="https://kcrafts.net/">Visit Live Site<span className="sr-only">{projectTwoDescSR}</span></a>
                         </div>
-                        <img src={projectTwoImgSrc} alt={projectTwoImgAlt} />
                     </div>
                 </div>
             </div>

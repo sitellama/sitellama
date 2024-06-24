@@ -27,17 +27,17 @@ export function Home() {
                 recentWorkAlt="example of website on different media"
 
                 projectOneImgSrc={s6Horses}
-                projectOneImgAlt="S6 Ranch website"
+                projectOneImgAlt="screenshots from S6 Ranch website"
                 projectOneName="S6 Ranch"
-                projectOneQuickFacts="Website Design | Custom Development | Editable Content"
-                projectOneDesc="This is a description - yay! We did so good!"
+                projectOneQuickFacts="Website Design &#x2022; Custom Development &#x2022; Editable Content"
+                projectOneDesc="S6 Ranch combines elite horse training with the warmth of a family ranch. The owners wanted an elegant website that showscased their love for the community, and that's exactly what we delivered."
                 projectOneDescSR="for S6 Ranch"
 
                 projectTwoImgSrc={kcrafts}
-                projectTwoImgAlt="s6 horses website"
-                projectTwoName="S6 Horses"
-                projectTwoQuickFacts="Website Design | Custom Development | Editable Content"
-                projectTwoDesc="This is a description - yay! We did so good!"
+                projectTwoImgAlt="screenshots from Kcrafts website"
+                projectTwoName="Kcrafts"
+                projectTwoQuickFacts="Wordpress &#x2022; Branding &#x2022; E-commerce &#x2022; Blog"
+                projectTwoDesc="Kcrafts handcrafts beautiful crystal jewelry and the owner wanted a branded, sales-driven website. We dove deep into SEO and marketing strategy to deliver a complete branding suite and a top-notch e-commerce site."
                 projectTwoDescSR="for Kcrafts"
             />
         </>
