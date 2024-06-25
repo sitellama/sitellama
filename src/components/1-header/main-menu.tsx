@@ -140,7 +140,7 @@ function OurLink({ label, to, loc }: { label: string; to: string; loc: Location;
 function MenuBody({ closeMenu, loc, className }: { closeMenu: () => void; loc: Location; className?: string; }) {
     return (
         <ul className={className}>
-            <OurLink label="Home" to="/" loc={loc} />
+            {/* <OurLink label="Home" to="/" loc={loc} /> */}
             <OurLink label="Services" to="/services" loc={loc} />
             <OurLink label="Portfolio" to="/portfolio" loc={loc} />
             <OurLink label="Pricing" to="/pricing" loc={loc} />
