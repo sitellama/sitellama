@@ -13,7 +13,7 @@ function ListItem({ label, ok = true }: { label: string; ok?: boolean; }) {
 // colored top half
 function PriceTag({ label, pages, bgColor, price }: { label: string; pages: string; bgColor: string; price: string; }) {
     return (
-        <div className={`text-center bg-brand-${bgColor} rounded-3xl py-24`}>
+        <div className={`text-center ${bgColor} rounded-3xl py-24`}>
             <h3 className="text-2xl font-semibold tracking-widest uppercase text-white">{label}</h3>
             {/* <p className="text-5xl font-semibold pt-8 pb-4">{pages}</p> */}
             <p className="text-2xl text-zinc-100">{price}</p>
@@ -36,7 +36,7 @@ function PricingSection() {
 
                 {/* Basic Card */}
                 <div className={cardClasses}>
-                    <PriceTag label="Basic" pages="1 Page" bgColor="green" price="starting at $600" />
+                    <PriceTag label="Basic" pages="1 Page" bgColor="bg-brand-green" price="starting at $600" />
                     <div className="text-2xl bg-white rounded-3xl p-8">
                         <ListItem label="Single Page Website" />
                         <ListItem label="Domain migration" />
@@ -57,7 +57,7 @@ function PricingSection() {
 
                 {/* Startup Card */}
                 <div className={cardClasses}>
-                    <PriceTag label="Standard" pages="2-5 Pages" bgColor="purple" price="starting at $3500" />
+                    <PriceTag label="Standard" pages="2-5 Pages" bgColor="bg-brand-purple" price="starting at $3500" />
                     <div className="text-2xl bg-white rounded-3xl p-8">
                         <ListItem label="Single Page Website" />
                         <ListItem label="Domain migration" />
@@ -78,7 +78,7 @@ function PricingSection() {
 
                 {/* Enterprise Card */}
                 <div className={cardClasses}>
-                    <PriceTag label="Premium" pages="5+ Pages" bgColor="teal" price="starting at $5000" />
+                    <PriceTag label="Premium" pages="5+ Pages" bgColor="bg-brand-teal" price="starting at $5000" />
                     <div className="text-2xl bg-white rounded-3xl p-8">
                         <ListItem label="Single Page Website" />
                         <ListItem label="Domain migration" />

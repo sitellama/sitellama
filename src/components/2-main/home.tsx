@@ -8,7 +8,8 @@ import recentWork from "../../assets/recent-work.png";
 import s6Horses from "../../assets/portfolio1.png";
 import kcrafts from "../../assets/portfolio2.png";
 import LlamaTech from "../4-library/llamatech";
-import ServicesDescription from "../4-library/service-descriptions";
+// import ServicesDescription from "../4-library/service-descriptions";
+import ServicesDescriptionCopy from "../4-library/service-descriptions-copy";
 import ServiceTypes from "../4-library/services-types";
 
 export function Home() {
@@ -18,7 +19,9 @@ export function Home() {
 
             <HeroBanner />
 
-            <ServicesDescription />
+            {/* <ServicesDescription /> */}
+            <ServicesDescriptionCopy />
+
 
             <ServiceTypes />
 

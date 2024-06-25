@@ -21,8 +21,8 @@ export default {
                 'brand-purple': '#9D3BAD',
                 'brand-green': '#6ABD86',
                 'brand-green-light': '#AFE9AF',
-                'brand-teal': '#33AFBC',
                 'grad-hero-top': '#004aad',
+                'brand-teal': '#33afbc',
                 'grad-hero-bottom': '#5de0e6',
                 'grad-green-top': '#6ABD86',
                 'grad-green-bottom': '#a0d48a',
@@ -32,6 +32,10 @@ export default {
             content: {
                 'arrow-right': 'url("src/assets/arrow-right.png")',
                 'arrow-right-purple': 'url("src/assets/arrow-right-purple.png")',
+            },
+            backgroundImage: {
+                'intro-left': "url('src/assets/intro-hex-grid.png')",
+                'intro-right': "url('src/assets/intro-cyber-lines.png')",
             },
             listStyleImage: {
                 "checkmark": 'url("./src/assets/check.svg")',
