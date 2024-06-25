@@ -6,7 +6,7 @@ export function Footer() {
 
 function Copyright() {
     return (
-        <div className='bg-gray-800 text-white p-4'>
+        <div className='bg-brand-blue text-white p-4'>
             <p className='text-center'>
                 <a
                     href="https://sitellama.com/"

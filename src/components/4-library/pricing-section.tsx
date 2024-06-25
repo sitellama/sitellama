@@ -5,18 +5,18 @@ function ListItem({ label, ok = true }: { label: string; ok?: boolean; }) {
     return (
         <div className="1w-max truncate flex items-center gap-x-4">
             {ok ? <IconCheck className="shrink-0 size-6 text-brand-green" /> : <IconCross className="shrink-0 size-6 text-brand-red" />}
-            <div className="">{label}</div>
+            <div className="text-sm">{label}</div>
         </div>
     );
 }
 
 // colored top half
-function PriceTag({ label, pages, price }: { label: string; pages: string; price: string; }) {
+function PriceTag({ label, pages, bgColor, price }: { label: string; pages: string; bgColor: string; price: string; }) {
     return (
-        <div className="py-16 text-center text-white bg-brand-green rounded-3xl">
-            <h1 className="text-2xl font-semibold tracking-widest uppercase">{label}</h1>
-            <p><span className="text-4xl font-semibold">{pages}</span></p>
-            <div className="font-medium">{price}</div>
+        <div className={`text-center bg-brand-${bgColor} rounded-3xl py-24`}>
+            <h3 className="text-2xl font-semibold tracking-widest uppercase text-white">{label}</h3>
+            {/* <p className="text-5xl font-semibold pt-8 pb-4">{pages}</p> */}
+            <p className="text-2xl text-zinc-100">{price}</p>
         </div>
     );
 }
@@ -28,7 +28,7 @@ function PricingSection() {
     return (
         <section className="bg-gray-100 flex flex-col items-center justify-center">
 
-            <h2 className="mb-24">
+            <h2 className="mb-24 mt-24">
                 <span className="text-brand-purple uppercase">SiteLlama</span> Packages
             </h2>
 
@@ -36,64 +36,64 @@ function PricingSection() {
 
                 {/* Basic Card */}
                 <div className={cardClasses}>
-                    <PriceTag label="Basic" pages="1 Page" price="starting at $600" />
+                    <PriceTag label="Basic" pages="1 Page" bgColor="green" price="starting at $600" />
                     <div className="text-2xl bg-white rounded-3xl p-8">
-                        <ListItem label="Domain migration" />
                         <ListItem label="Single Page Website" />
-                        <ListItem label="3 Design Revisions" ok={false} />
+                        <ListItem label="Domain migration" />
                         <ListItem label="Social Media Integration" />
                         <ListItem label="Mobile Friendly Design" />
                         <ListItem label="1 Contact Form" />
-                        <ListItem label="Integrated Google Analytics" />
-                        <ListItem label="Web Strategy - Sale Funnel" />
-                        <ListItem label="Web Strategy - SEO" />
-                        <ListItem label="Web Strategy - KPI's" />
                         <ListItem label="GDPR/CCPA Compliance" />
                         <ListItem label="WCAG level A Compliance" />
                         <ListItem label="Launch Day Support" />
-                        <ListItem label="1 Week Follow Up" ok={false} />
+                        <ListItem label="1 Week Follow Up" />
+                        <ListItem label="3 Design Revisions" ok={false} />
+                        <ListItem label="Google Analytics" ok={false} />
+                        <ListItem label="Strategy - Sale Funnel" ok={false} />
+                        <ListItem label="Strategy - SEO" ok={false} />
+                        <ListItem label="Strategy - KPI's" ok={false} />
                     </div>
                 </div>
 
                 {/* Startup Card */}
                 <div className={cardClasses}>
-                    <PriceTag label="Standard" pages="2-5 Pages" price="starting at $3500" />
+                    <PriceTag label="Standard" pages="2-5 Pages" bgColor="purple" price="starting at $3500" />
                     <div className="text-2xl bg-white rounded-3xl p-8">
-                        <ListItem label="Hosting & Domain migration" />
                         <ListItem label="Single Page Website" />
-                        <ListItem label="3 Design Revisions" ok={false} />
+                        <ListItem label="Domain migration" />
                         <ListItem label="Social Media Integration" />
                         <ListItem label="Mobile Friendly Design" />
                         <ListItem label="1 Contact Form" />
-                        <ListItem label="Integrated Google Analytics" />
-                        <ListItem label="Web Strategy - Sale Funnel" />
-                        <ListItem label="Web Strategy - SEO" />
-                        <ListItem label="Web Strategy - KPI's" />
                         <ListItem label="GDPR/CCPA Compliance" />
                         <ListItem label="WCAG level A Compliance" />
                         <ListItem label="Launch Day Support" />
-                        <ListItem label="1 Week Follow Up" ok={false} />
+                        <ListItem label="1 Week Follow Up" />
+                        <ListItem label="3 Design Revisions" ok={false} />
+                        <ListItem label="Google Analytics" ok={false} />
+                        <ListItem label="Strategy - Sale Funnel" />
+                        <ListItem label="Strategy - SEO" />
+                        <ListItem label="Strategy - KPI's" />
                     </div>
                 </div>
 
                 {/* Enterprise Card */}
                 <div className={cardClasses}>
-                    <PriceTag label="Premium" pages="5+ Pages" price="starting at $5000" />
+                    <PriceTag label="Premium" pages="5+ Pages" bgColor="teal" price="starting at $5000" />
                     <div className="text-2xl bg-white rounded-3xl p-8">
-                        <ListItem label="Hosting & Domain migration" />
                         <ListItem label="Single Page Website" />
-                        <ListItem label="3 Design Revisions" ok={false} />
+                        <ListItem label="Domain migration" />
                         <ListItem label="Social Media Integration" />
                         <ListItem label="Mobile Friendly Design" />
                         <ListItem label="1 Contact Form" />
-                        <ListItem label="Integrated Google Analytics" />
-                        <ListItem label="Web Strategy - Sale Funnel" />
-                        <ListItem label="Web Strategy - SEO" />
-                        <ListItem label="Web Strategy - KPI's" />
                         <ListItem label="GDPR/CCPA Compliance" />
                         <ListItem label="WCAG level A Compliance" />
                         <ListItem label="Launch Day Support" />
-                        <ListItem label="1 Week Follow Up" ok={false} />
+                        <ListItem label="1 Week Follow Up" />
+                        <ListItem label="3 Design Revisions" />
+                        <ListItem label="Google Analytics" />
+                        <ListItem label="Strategy - Sale Funnel" />
+                        <ListItem label="Strategy - SEO" />
+                        <ListItem label="Strategy - KPI's" />
                     </div>
                 </div>
 

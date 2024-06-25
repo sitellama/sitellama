@@ -25,7 +25,7 @@ export function ContactForm(props: ContactFormProps) {
     }, []);
 
     return (
-        <section className="bg-brand-blue py-20">
+        <section className="bg-brand-blue pt-[39rem] pb-20 mt-[-32rem]">
 
             <div className="max-w-[1200px] mx-auto">
                 <img src={mascot} alt={mascotAlt} className="w-full max-w-[100px] mx-auto md:ml-[15%]" />
