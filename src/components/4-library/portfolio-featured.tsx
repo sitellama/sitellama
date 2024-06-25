@@ -36,7 +36,7 @@ export function PortfolioFeatured(
         <section className="">
 
             <div>
-                <h2 className="font-headings text-xl text-center my-8">Recent Work</h2>
+                <h2 className="text-center my-8">Recent Work</h2>
                 <img src={recentWork} alt={recentWorkAlt} className="-mb-12 mx-auto w-full max-w-[1200px]" />
             </div>
 

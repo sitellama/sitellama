@@ -29,7 +29,7 @@ export function ContactForm(props: ContactFormProps) {
 
             <div className="max-w-[1200px] mx-auto">
                 <img src={mascot} alt={mascotAlt} className="w-full max-w-[100px] mx-auto md:ml-[15%]" />
-                <h2 className="font-headings text-xl text-center my-8 text-white before:content-llama-contact-form md:-mt-[100px] md:mb-[100px]">Let's Get In touch!</h2>
+                <h2 className="text-center my-8 text-white before:content-llama-contact-form md:-mt-[100px] md:mb-[100px]">Let's Get In Touch!</h2>
             </div>
 
             <div className="max-w-[1000px] bg-white mx-auto rounded-3xl">

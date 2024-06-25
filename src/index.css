@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat:ital,wght@0,800;1,800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat:ital,wght@0,400..800;1,800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@
     @apply text-base;
   }
   h2 {
-    @apply text-brand-blue uppercase;
+    @apply text-5xl font-extrabold text-brand-blue;
   }
   h3 {
     @apply text-brand-purple uppercase;
