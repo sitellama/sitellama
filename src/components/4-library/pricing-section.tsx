@@ -15,9 +15,7 @@ function PriceTag({ label, pages, price }: { label: string; pages: string; price
     return (
         <div className="py-16 text-center text-white bg-brand-green rounded-3xl">
             <h1 className="text-2xl font-semibold tracking-widest uppercase">{label}</h1>
-            <p>
-                <span className="text-4xl font-semibold">{pages}</span>
-            </p>
+            <p><span className="text-4xl font-semibold">{pages}</span></p>
             <div className="font-medium">{price}</div>
         </div>
     );
