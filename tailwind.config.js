@@ -14,6 +14,7 @@ export default {
             fontSize: {
                 sm: '1rem',
                 base: '1.125rem',
+                lg: '1.25rem',
                 xl: '1.5rem',
             },
             colors: {
@@ -32,6 +33,7 @@ export default {
             content: {
                 'arrow-right': 'url("src/assets/arrow-right.png")',
                 'arrow-right-purple': 'url("src/assets/arrow-right-purple.png")',
+                'empty': '""',
             },
             backgroundImage: {
                 'intro-left': "url('src/assets/intro-hex-grid.png')",
