@@ -33,7 +33,7 @@ export function PortfolioFeatured(
             projectTwoDescSR: string;
         }) {
     return (
-        <section className="">
+        <section id="portfolio">
 
             <div>
                 <h2 className="text-center my-8">Recent Work</h2>

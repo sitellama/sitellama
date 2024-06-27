@@ -26,13 +26,14 @@ const cardClasses = "flex-1 lg:max-w-96 bg-white rounded-3xl md:hover:scale-105 
 
 function PricingSection() {
     return (
-        <section className="bg-gray-100 flex flex-col items-center justify-center">
+        <section className="bg-gray-100 flex flex-col items-center justify-center" id="pricing">
 
-            <h2 className="mb-24 mt-24">
-                <span className="text-brand-purple uppercase">SiteLlama</span> Packages
+            <h2 className="mt-24">
+                <span className="text-brand-purple">Website</span> Packages
             </h2>
+            <p className="text-zinc-700 mt-2 max-w-[1000px] text-center">We offer hosting, branding and maintenance but we specialize in web development. Here are our most popular website packages. Please <a href="#contact" className="underline">contact us</a> for prcing on other services or websites beyond 5 pages.</p>
 
-            <div className="px-12 w-full flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="px-12 w-full flex flex-col md:flex-row items-center justify-center gap-8 mt-24">
 
                 {/* Basic Card */}
                 <div className={cardClasses}>
@@ -63,10 +64,6 @@ function PricingSection() {
                         <ListItem label="3 Design Revisions" />
                         <ListItem label="1 Week Follow Up" />
                     </div>
-                </div>
-
-                <div>
-                    <p className="text-black">* Inquire for custom pricing for sites above 5 pages</p>
                 </div>
 
             </div>

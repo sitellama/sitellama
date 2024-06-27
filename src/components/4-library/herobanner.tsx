@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import mascot from "../../assets/mobile-development-hero-cropped.png";
+import mascotSm from "../../assets/mobile-development-hero-cropped.png";
+import mascotLg from "../../assets/mobile-development-hero.png";
 
 function HeroBanner() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -13,7 +14,7 @@ function HeroBanner() {
     flex justify-center";
 
     const imgStyles = `mt-4 md:mt-0 relative md:absolute md:max-h-[360px] md:-bottom-[8rem]\
-    ${isLoaded ? 'opacity-100 scale-100 rotate-0 transition-all duration-500 delay-1000' : 'opacity-0 scale-50 rotate-12 translate-x-[-50%] translate-y-[-50%] transition-all duration-500'}`;
+    ${isLoaded ? 'opacity-100 scale-100 rotate-0 transition-all duration-500' : 'opacity-0 scale-50 rotate-12 translate-x-[-50%] translate-y-[-50%] transition-all duration-500'}`;
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -44,19 +45,10 @@ function HeroBanner() {
                 </div>
 
                 <div className="mb-[-10rem] md:mb-0 flex flex-col lg:flex-row md:relative md:w-full justify-end">
-                    <img
-                        src={mascot}
-                        alt="Logo"
-                        className={imgStyles}
-                    // onMouseEnter={() => setIsHovered(true)}
-                    // onMouseLeave={() => setIsHovered(false)}
-                    />
-                    {/* {isHovered && (
-                        <div className="absolute top-0 left-0 bg-white p-4 rounded-lg shadow-lg">
-                            <p className="text-black font-semibold">Llama says</p>
-                            <p>"I just got my dipllama"</p>
-                        </div>
-                    )} */}
+                    <picture>
+                        <source media="(min-width:650px)" srcset={mascotLg} />
+                        <img src={mascotSm} alt="Logo" className={imgStyles} ></img>
+                    </picture>
                 </div>
 
             </div>

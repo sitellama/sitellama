@@ -32,7 +32,7 @@ const menuColClasses = "\
 w-full \
 sm:hidden \
 \
-bg-green-500 \
+bg-white \
 \
 flex flex-col items-center \
 ";
@@ -69,13 +69,13 @@ export function MainMenu() {
                         }
                     </button>
 
-                        {isMenuOpen &&
-                            createPortal(
-                                <div ref={ref} className="w-full absolute right-0 top-0 flex justify-end">
-                                    <MenuBody className={menuColClasses} closeMenu={closeMenu} loc={loc} />
-                                </div>, document.body
-                            )
-                        }
+                    {isMenuOpen &&
+                        createPortal(
+                            <div ref={ref} className="w-full absolute right-0 top-0 flex justify-end">
+                                <MenuBody className={menuColClasses} closeMenu={closeMenu} loc={loc} />
+                            </div>, document.body
+                        )
+                    }
                 </div>
             </div>
         </div>
@@ -86,15 +86,11 @@ const c2Classes = "\
 block \
 px-3 \
 py-2 \
-text-2xl \
+text-lg \
 \
-text-gray-900 \
-dark:text-white \
-dark:hover:bg-gray-700 \
-dark:hover:text-white \
+md:text-white \
 \
-sm:hover:bg-gray-100 \
-hover:bg-transparent \
+hover:underline \
 \
 1border-red-500 1border \
 \
@@ -141,10 +137,10 @@ function MenuBody({ closeMenu, loc, className }: { closeMenu: () => void; loc: L
     return (
         <ul className={className}>
             {/* <OurLink label="Home" to="/" loc={loc} /> */}
-            <OurLink label="Services" to="/services" loc={loc} />
-            <OurLink label="Portfolio" to="/portfolio" loc={loc} />
-            <OurLink label="Pricing" to="/pricing" loc={loc} />
-            <OurLink label="Contact" to="/contact" loc={loc} />
+            <OurLink label="Services" to="#services" loc={loc} />
+            <OurLink label="Portfolio" to="#portfolio" loc={loc} />
+            <OurLink label="Pricing" to="#pricing" loc={loc} />
+            <OurLink label="Contact" to="#contact" loc={loc} />
         </ul>
     );
 }
