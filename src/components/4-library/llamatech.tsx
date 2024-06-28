@@ -2,40 +2,46 @@ import React from 'react';
 
 function LlamaTech() {
     return (
-        <section className=" max-w-4xl mx-auto">
+        <section>
             <h2 className="text-center text-brand-blue dark:text-blue-400 mb-8">
-                How <span className="text-brand-teal">Llama Tech</span> Helps <span className="md:whitespace-nowrap">Businesses Grow</span>
+                How <span className="text-brand-teal">Llama Tech</span> Helps <br></br> <span className="md:whitespace-nowrap">Businesses Grow</span>
             </h2>
 
-            <div className="flex justify-center space-x-4 mb-8">
-                <p className="bg-brand-green-light text-zinc-600 font-semibold py-2 px-4 rounded-full">GET DISCOVERED</p>
+            <div className="flex justify-center flex-col md:flex-row space-x-4 mb-8">
+                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full max-w-fit">GET DISCOVERED</p>
                 <p className="flex items-center">
                     <span className="text-gray-500">&#8594;</span> {/* Right-pointing arrow */}
                 </p>
-                <p className="bg-brand-green-light text-zinc-600 font-semibold py-2 px-4 rounded-full">BUILD TRUST</p>
+                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full max-w-fit">BUILD TRUST</p>
                 <p className="flex items-center">
                     <span className="text-gray-500">&#8594;</span> {/* Right-pointing arrow */}
                 </p>
-                <p className="bg-brand-green-light text-zinc-600 font-semibold py-2 px-4 rounded-full">ENGAGE CLIENTS</p>
+                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full max-w-fit">ENGAGE CLIENTS</p>
             </div>
 
-            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-6 rounded-lg">
-                <div className="flex flex-col items-center lg:space-x-8">
-                    <div className="flex-1 mb-6 lg:mb-0">
-                        <h2 className="text-white text-xl font-bold mb-2">SMALL BUSINESS</h2>
-                        <h3 className="text-white text-3xl font-bold mb-4">BIG GOALS</h3>
-                        <img src="src\assets\llama-tech-1-desktop.png" alt="Desktop view" className="mx-auto lg:mx-0 mb-4 lg:mb-0" />
+            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-10 rounded-3xl max-w-[1000px] mx-auto mt-[8rem]">
+                <div className="flex flex-col md:flex-row justify-between items-center mt-[-6rem] pb-[5rem]">
+                    <div className="mr-[-10rem]">
+                        <p className="text-white text-xl font-bold mb-2">SMALL BUSINESS</p>
+                        <p className="text-white text-5xl font-bold mb-4">BIG GOALS</p>
                     </div>
-                    <div className="flex-1 lg:flex lg:items-start lg:space-x-4">
-                        <img src="src/assets/llama-tech-2-desktop.png" alt="Tablet view" className="lg:w-1/2 mb-4 lg:mb-0" />
-                        <div className="lg:w-1/2">
-                            <h4 className="text-white text-xl font-bold mb-2">WHAT MAKES A ‘GOOD’ WEBSITE?</h4>
-                            <p className="text-white mb-4">
-                                In a nutshell, good websites look appealing, are fast, answer user questions, are accessible and easy to navigate, can be found by search engines and most importantly - they should enhance your business!
-                            </p>
-                        </div>
+                    <img src="src\assets\llama-tech-1-desktop.png" alt="sample of web design work on a laptop" className="hidden md:block max-w-[80%]" />
+                    <img src="src\assets\llama-tech-1-mobile.png" alt="sample of web design work on a laptop" className=" md:hidden max-w-[80%]" />
+                </div>
+
+                <div className="flex flex-col md:flex-row pb-[5rem]">
+                    <div className="md:order-1">
+                        <h4 className="text-white text-xl font-bold mb-2">WHAT MAKES A ‘GOOD’ WEBSITE?</h4>
+                        <p className="text-white mb-4">
+                            In a nutshell, good websites look appealing, are fast, answer user questions, are accessible and easy to navigate, can be found by search engines and most importantly - they should enhance your business!
+                        </p>
+                    </div>
+                    <div className="relative">
+                        <img src="src/assets/llama-tech-2-desktop.png" alt="sample of web design work on a tablet and phone" className="hidden md:block max-w-[80%] mb-4" />
+                        <img src="src/assets/llama-tech-2-mobile.png" alt="sample of web design work on a tablet and phone" className="md:hidden max-w-[80%] mb-4" />
                     </div>
                 </div>
+
 
                 <div className="mt-8">
                     <h4 className="text-white text-xl font-bold mb-2">BUILDING A GOOD WEBSITE</h4>
