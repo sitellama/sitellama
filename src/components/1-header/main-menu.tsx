@@ -94,7 +94,6 @@ hover:underline \
 \
 1border-red-500 1border \
 \
-\
 1md:p-0 \
 1md:border-0 \
 1md:hover:bg-transparent \
@@ -103,7 +102,6 @@ hover:underline \
 1md:dark:hover:bg-transparent \
 \
 select-none \
-\
 ";
 
 function OurLink({ label, to, loc }: { label: string; to: string; loc: Location; }) {
