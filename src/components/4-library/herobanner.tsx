@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import mascotSm from "../../assets/mobile-development-hero-cropped.png";
 import mascotLg from "../../assets/mobile-development-hero.png";
+import { ArrowRight } from "@/ui";
 
 function HeroBanner() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -26,7 +27,7 @@ function HeroBanner() {
 
     return (
         <section className={sectionStyles}>
-            <div className="flex flex-col md:flex-row w-[80%] max-w-[980px]">
+            <div className="flex flex-col md:flex-row w-[85%] max-w-[980px]">
 
                 <div className="w-full text-center text-white lg:w-auto">
                     <div className={`mt-10 md:mt-0 px-3 ${isLoaded ? 'opacity-100 transition-opacity duration-300' : 'opacity-0'} delay-[200ms]`}>
@@ -39,8 +40,14 @@ function HeroBanner() {
                         <p className="text-[28px] font-mono md:mb-8">No Prob-llama!</p>
                     </div>
                     <div className="flex justify-center gap-x-4 text-center w-[100%]">
-                        <a className="w-fit btn bg-brand-green text-black mt-0 px-6" href="">Learn More</a>
-                        <a className="w-fit btn bg-brand-purple text-white mt-0 px-6" href="">Get Started</a>
+                        <a className="w-fit btn bg-brand-purple text-white mt-0 px-4" target="_blank" href="https://kcrafts.net/">
+                            Learn More
+                            <ArrowRight className="inline-block ml-3 stroke-3 text-white size-4" />
+                        </a>
+                        <a className="w-fit btn bg-brand-green-light text-black mt-0 px-4" target="_blank" href="https://kcrafts.net/">
+                            Get Started
+                            <ArrowRight className="inline-block ml-3 stroke-3 text-brand-purple size-4" />
+                        </a>
                     </div>
                 </div>
 

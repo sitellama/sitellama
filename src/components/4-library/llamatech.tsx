@@ -1,3 +1,6 @@
+import { ArrowRight } from '@/ui';
+import React from 'react';
+
 function LlamaTech() {
     return (
         <section className="px-4 md:px-0">
@@ -57,9 +60,12 @@ function LlamaTech() {
                     <p className="text-white mb-4">
                         We work with you to determine your business goals, timeline and budget. Leave the techy stuff to the llama herd, we've got you covered!
                     </p>
-                    <button className="bg-brand-blue btn text-white">
-                        Lets Get Started
-                    </button>
+                    <div className='flex justify-center'>
+                        <button className="flex justify-center items-center leading-light bg-purple-600 text-white font-semibold py-2 px-4 rounded-full mt-4">
+                            Let's Get Started
+                            <ArrowRight className="inline-block ml-3 stroke-3 text-brand-white size-4" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
