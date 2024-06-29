@@ -7,10 +7,10 @@ import mascot from "../../assets/llama_mascot-form.png";
 import recentWork from "../../assets/recent-work.png";
 import s6Horses from "../../assets/portfolio1.png";
 import kcrafts from "../../assets/portfolio2.png";
-import LlamaTech from "../4-library/llamatech";
+import Growth from "../4-library/growth";
 // import ServicesDescription from "../4-library/service-descriptions";
-import ServicesDescriptionCopy from "../4-library/service-descriptions-copy";
-import ServiceTypes from "../4-library/services-types";
+import Intro from "../4-library/intro";
+import LlamaTechnology from "../4-library/llama-technology";
 import Carousel from "../4-library/carousel";
 
 export function Home() {
@@ -21,12 +21,12 @@ export function Home() {
             <HeroBanner />
 
             {/* <ServicesDescription /> */}
-            <ServicesDescriptionCopy />
+            <Intro />
 
 
-            <ServiceTypes />
+            <LlamaTechnology />
 
-            <LlamaTech />
+            <Growth />
 
             <PortfolioFeatured
                 recentWork={recentWork}

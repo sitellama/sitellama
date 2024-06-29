@@ -1,7 +1,11 @@
 import { ArrowRight } from '@/ui';
 import React from 'react';
+import llamaTech2d from '../../../src/assets/llama-tech-2-desktop-v2.png'
+import viewMoreWork from '../../../src/assets/view-more-work.png'
+import llamaTech1d from '../../../src/assets/llama-tech-1-desktop.png'
+import llamaTech1m from '../../../src/assets/llama-tech-1-mobile.png'
 
-function LlamaTech() {
+function Growth() {
     return (
         <section className="px-4 md:px-0" id='growth'>
             <h2 className="text-center text-brand-blue dark:text-blue-400 mb-16 mt-4">
@@ -28,8 +32,10 @@ function LlamaTech() {
                         {/* <p className="text-brand-teal uppercase font-bold">achieve</p> */}
                         <p className="text-white text-5xl font-bold">BIG GOALS</p>
                     </div>
-                    <img src="src\assets\llama-tech-1-desktop.png" alt="sample of web design work on a laptop" className="hidden md:block max-w-[80%]" />
-                    <img src="src\assets\llama-tech-1-mobile.png" alt="sample of web design work on a laptop" className=" md:hidden align-end mt-8" />
+                    <img src={llamaTech1d} alt="sample of web design work on a laptop" className="hidden md:block max-w-[80%]" />
+                    {/* <img src="src/assets/llama-tech-1-desktop.png" alt="sample of web design work on a laptop" className="hidden md:block max-w-[80%]" /> */}
+                    <img src={llamaTech1m} alt="sample of web design work on a laptop" className=" md:hidden align-end mt-8" />
+                    {/* <img src="src/assets/llama-tech-1-mobile.png" alt="sample of web design work on a laptop" className=" md:hidden align-end mt-8" /> */}
                 </div>
 
                 <div className="flex flex-col md:flex-row flex-wrap items-center justify-between mt-16">
@@ -41,13 +47,14 @@ function LlamaTech() {
                         <p className="text-white mb-4">Websites boost a businesses visibility, credibility and accessibility. Your site acts as a hub for information. It shows potential customers who you are, what you offer and allows them to engage with you 24/7.</p>
                     </div>
                     <div className=" md:order-1 self-center md:w-[54%]">
-                        <img src="src/assets/llama-tech-2-desktop-v2.png" alt="sample of web design work on a tablet and phone" className=" max-w-[75%] md:max-w-[80%] mb-4 mt-8 md:mt-0" />
+                        <img src={llamaTech2d} alt="sample of web design work on a tablet and phone" className=" max-w-[75%] md:max-w-[80%] mb-4 mt-8 md:mt-0" />
                         {/* <img src="src/assets/llama-tech-2-mobile.png" alt="sample of web design work on a tablet and phone" className="md:hidden mt-8 mb-4" /> */}
                     </div>
                 </div>
 
                 <div className="w-5/6 md:w-3/6 mx-auto -mt-[2rem]">
-                    <img src="src/assets/view-more-work.png" alt="sample of web design work on a tablet and phone"></img>
+                    <img src={viewMoreWork} alt="sample of web design work on a tablet and phone"></img>
+                    {/* <img src="src/assets/view-more-work.png" alt="sample of web design work on a tablet and phone"></img> */}
                 </div>
 
 
@@ -71,4 +78,4 @@ function LlamaTech() {
         </section>
     );
 }
-export default LlamaTech;
+export default Growth;
