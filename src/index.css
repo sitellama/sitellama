@@ -5,46 +5,48 @@
 @tailwind utilities;
 
 @layer components {
-    p {
-        @apply text-base;
-    }
+  p {
+    @apply text-base;
+  }
 
-    h2 {
-        @apply text-5xl font-extrabold text-brand-blue;
-    }
+  h2 {
+    @apply text-5xl font-extrabold text-brand-blue;
+  }
 
-    h3 {
-        @apply text-brand-purple uppercase;
-    }
+  h3 {
+    @apply text-brand-purple uppercase;
+  }
 
-    .btn {
-        @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold 
+  .btn {
+    @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold 
         hover:scale-105 
         transition-transform;
-    }
+  }
 
-    .btn-arrow-white-right { @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold 
+  .btn-arrow-white-right {
+    @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold 
+        after:content-arrow-svg
+        fill-red-300
+        after:inline-block 
+        after:pl-4 
+        after:align-middle 
+        hover:scale-105;
+  }
+
+  .btn-arrow-white-left {
+    @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold 
         after:content-arrow-svg
         fill-red-300
         after:inline-block 
         after:pl-4 
         after:align-middle 
         hover:scale-105
-    }
+        rotate-180;
+  }
 
-    .btn-arrow-white-left { @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold 
-        after:content-arrow-svg
-        fill-red-300
-        after:inline-block 
-        after:pl-4 
-        after:align-middle 
-        hover:scale-105
-        rotate-180
-    }
-
-    .btn-prev {
-        @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-svg after:inline-block after:pl-4 after:align-middle hover:scale-105 transition-transform;
-    }
+  .btn-prev {
+    @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-svg after:inline-block after:pl-4 after:align-middle hover:scale-105 transition-transform;
+  }
 }
 
 /* .slick-list {
@@ -52,13 +54,15 @@
 } */
 
 .slick-slide {
-    @apply m-auto px-2 w-[180px];
+  /* @apply m-auto px-2 w-[180px]; */
+  @apply px-2 w-[180px] md:w-[350px];
 }
 
 .slick-slide img {
-    @apply h-auto w-max;
+  @apply h-auto w-max;
 }
 
-.slick-prev, .slick-next {
-    @apply bg-red-500;
-}
+/* .slick-prev,
+.slick-next {
+  @apply bg-red-500;
+} */
