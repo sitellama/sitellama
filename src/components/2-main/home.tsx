@@ -11,6 +11,7 @@ import LlamaTech from "../4-library/llamatech";
 // import ServicesDescription from "../4-library/service-descriptions";
 import ServicesDescriptionCopy from "../4-library/service-descriptions-copy";
 import ServiceTypes from "../4-library/services-types";
+import Carousel from "../4-library/carousel";
 
 export function Home() {
     return (
@@ -45,6 +46,9 @@ export function Home() {
                 projectTwoDesc="Kcrafts handmakes beautiful crystal jewelry. The owner was looking for a branded, sales-driven website. We dove deep into SEO and marketing strategy to deliver a complete branding suite and a top-notch e-commerce site."
                 projectTwoDescSR="for Kcrafts"
             />
+
+            <Carousel />
+
             <PriceSection />
 
             <ContactForm

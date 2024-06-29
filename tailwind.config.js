@@ -22,8 +22,8 @@ export default {
                 'brand-purple': '#9D3BAD',
                 'brand-green': '#6ABD86',
                 'brand-green-light': '#AFE9AF',
-                'grad-hero-top': '#004aad',
                 'brand-teal': '#33afbc',
+                'grad-hero-top': '#004aad',
                 'grad-hero-bottom': '#5de0e6',
                 'grad-green-top': '#6ABD86',
                 'grad-green-bottom': '#a0d48a',
@@ -33,6 +33,7 @@ export default {
             content: {
                 'arrow-right': 'url("src/assets/arrow-right.png")',
                 'arrow-right-purple': 'url("src/assets/arrow-right-purple.png")',
+                'arrow-svg': 'url("src/assets/arrow.svg")',
                 'empty': '""',
             },
             backgroundImage: {
@@ -45,8 +46,13 @@ export default {
                 // "checkmark": 'url("./src/assets/smileyface-copy.svg")',
                 "cross": 'url("./src/assets/cross.svg")',
             },
+            strokeWidth: {
+                '3': '3px',
+                '4': '4px',
+                '5': '5px',
+            },
+            }
         },
-    },
     plugins: [
         require("./tailwind/tailwind-plugin-debug-screens"),
     ],

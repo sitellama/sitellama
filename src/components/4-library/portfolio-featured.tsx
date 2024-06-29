@@ -1,3 +1,5 @@
+import { ArrowLeft, ArrowRight } from "@/ui";
+
 export function PortfolioFeatured(
     {
         recentWork,
@@ -49,7 +51,11 @@ export function PortfolioFeatured(
                             <p className="uppercase text-white text-sm">{projectOneQuickFacts}</p>
                             <h3 className="text-white font-headings text-xl  py-4">{projectOneName}</h3>
                             <p className="text-white">{projectOneDesc}</p>
-                            <a className="bg-brand-green btn" target="_blank" href="https://s6horses.com/">Visit Live Site<span className="sr-only">{projectOneDescSR}</span></a>
+                            <a className="flex justify-center leading-light bg-brand-green btn" target="_blank" href="https://s6horses.com/">
+                                Visit Live Site
+                                <span className="sr-only">{projectOneDescSR}</span>
+                                <ArrowRight className="inline-block ml-3 stroke-3 text-brand-purple size-4" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +66,11 @@ export function PortfolioFeatured(
                             <p className="uppercase text-white text-sm">{projectTwoQuickFacts}</p>
                             <h3 className="text-white font-headings text-xl  py-4">{projectTwoName}</h3>
                             <p className="text-white">{projectTwoDesc}</p>
-                            <a className="bg-brand-green-light btn" target="_blank" href="https://kcrafts.net/">Visit Live Site<span className="sr-only">{projectTwoDescSR}</span></a>
+                            <a className="flex justify-center leading-light bg-brand-green-light btn" target="_blank" href="https://kcrafts.net/">
+                                Visit Live Site
+                                <span className="sr-only">{projectTwoDescSR}</span>
+                                <ArrowRight className="inline-block ml-3 stroke-3 text-brand-purple size-4" />
+                            </a>
                         </div>
                     </div>
                 </div>
