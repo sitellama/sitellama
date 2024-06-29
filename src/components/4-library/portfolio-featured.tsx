@@ -38,7 +38,7 @@ export function PortfolioFeatured(
         <section id="portfolio">
 
             <div>
-                <h2 className="text-center my-8">Recent Work</h2>
+                <h2 className="text-center mb-8 mt-24">Recent Work</h2>
                 <img src={recentWork} alt={recentWorkAlt} className="-mb-12 mx-auto w-full max-w-[1200px]" />
             </div>
 

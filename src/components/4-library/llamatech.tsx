@@ -3,54 +3,62 @@ import React from 'react';
 
 function LlamaTech() {
     return (
-        <section id='growth'>
-            <h2 className="text-center text-brand-blue dark:text-blue-400 mb-8">
+        <section className="px-4 md:px-0" id='growth'>
+            <h2 className="text-center text-brand-blue dark:text-blue-400 mb-16 mt-4">
                 How <span className="text-brand-teal">Llama Tech</span> Helps <br></br> <span className="md:whitespace-nowrap">Businesses Grow</span>
             </h2>
 
-            <div className="flex justify-center flex-col md:flex-row space-x-4 mb-8">
-                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full max-w-fit">GET DISCOVERED</p>
+            <div className="flex justify-center items-center flex-col md:flex-row md:space-x-4 md:mb-8">
+                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">GET DISCOVERED</p>
                 <p className="flex items-center">
                     <span className="text-gray-500">&#8594;</span> {/* Right-pointing arrow */}
                 </p>
-                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full max-w-fit">BUILD TRUST</p>
+                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">BUILD TRUST</p>
                 <p className="flex items-center">
                     <span className="text-gray-500">&#8594;</span> {/* Right-pointing arrow */}
                 </p>
-                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full max-w-fit">ENGAGE CLIENTS</p>
+                <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">ENGAGE CLIENTS</p>
             </div>
 
-            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-10 rounded-3xl max-w-[1000px] mx-auto mt-[8rem]">
-                <div className="flex flex-col md:flex-row justify-between items-center mt-[-6rem] pb-[5rem]">
-                    <div className="mr-[-10rem]">
-                        <p className="text-white text-xl font-bold mb-2">SMALL BUSINESS</p>
-                        <p className="text-white text-5xl font-bold mb-4">BIG GOALS</p>
+            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 md:p-10 rounded-3xl max-w-[1000px] mx-auto mt-16 md:mt-32">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-4 md:mt-[-6rem]">
+                    <div className="mr-[-10rem] flex flex-col align-start">
+                        {/* <p className="text-brand-teal uppercase font-bold">helping</p> */}
+                        <p className="text-white text-xl font-bold">SMALL BUSINESS</p>
+                        {/* <p className="text-brand-teal uppercase font-bold">achieve</p> */}
+                        <p className="text-white text-5xl font-bold">BIG GOALS</p>
                     </div>
                     <img src="src\assets\llama-tech-1-desktop.png" alt="sample of web design work on a laptop" className="hidden md:block max-w-[80%]" />
-                    <img src="src\assets\llama-tech-1-mobile.png" alt="sample of web design work on a laptop" className=" md:hidden max-w-[80%]" />
+                    <img src="src\assets\llama-tech-1-mobile.png" alt="sample of web design work on a laptop" className=" md:hidden align-end mt-8" />
                 </div>
 
-                <div className="flex flex-col md:flex-row pb-[5rem]">
-                    <div className="md:order-1">
-                        <h4 className="text-white text-xl font-bold mb-2">WHAT MAKES A ‘GOOD’ WEBSITE?</h4>
-                        <p className="text-white mb-4">
+                <div className="flex flex-col md:flex-row flex-wrap items-center justify-between mt-16">
+                    <div className="md:order-2 md:w-[46%] text-center md:text-right">
+                        <h4 className="text-white text-xl font-bold mb-2 uppercase">Why is a website important?</h4>
+                        {/* <p className="text-white mb-4">
                             In a nutshell, good websites look appealing, are fast, answer user questions, are accessible and easy to navigate, can be found by search engines and most importantly - they should enhance your business!
-                        </p>
+                        </p> */}
+                        <p className="text-white mb-4">Websites boost a businesses visibility, credibility and accessibility. Your site acts as a hub for information. It shows potential customers who you are, what you offer and allows them to engage with you 24/7.</p>
                     </div>
-                    <div className="relative">
-                        <img src="src/assets/llama-tech-2-desktop.png" alt="sample of web design work on a tablet and phone" className="hidden md:block max-w-[80%] mb-4" />
-                        <img src="src/assets/llama-tech-2-mobile.png" alt="sample of web design work on a tablet and phone" className="md:hidden max-w-[80%] mb-4" />
+                    <div className=" md:order-1 self-center md:w-[54%]">
+                        <img src="src/assets/llama-tech-2-desktop-v2.png" alt="sample of web design work on a tablet and phone" className=" max-w-[75%] md:max-w-[80%] mb-4 mt-8 md:mt-0" />
+                        {/* <img src="src/assets/llama-tech-2-mobile.png" alt="sample of web design work on a tablet and phone" className="md:hidden mt-8 mb-4" /> */}
                     </div>
                 </div>
 
+                <div className="w-5/6 md:w-3/6 mx-auto -mt-[2rem]">
+                    <img src="src/assets/view-more-work.png" alt="sample of web design work on a tablet and phone"></img>
+                </div>
 
-                <div className="mt-8">
-                    <h4 className="text-white text-xl font-bold mb-2">BUILDING A GOOD WEBSITE</h4>
+
+                <div className="text-center md:text-left mt-16">
+                    <h4 className="text-white text-xl font-bold mb-2 uppercase">Picking the right team</h4>
+                    <p className="text-white mb-4">Your developement team should optimize your site for user experience and performance by using web best practices - and that's exactly what we do best!  </p>
                     <p className="text-white mb-4">
-                        We work with you to determine your business goals, timeline and budget. Leave all the techy stuff to us, we’ve got you covered.
+                        Our team members approach your site with the know-how gained from years working with enterprise level companies such as <span className="text-brand-purple font-bold">Disney</span>, <span className="text-brand-purple font-bold ">Target</span>, <span className="text-brand-purple font-bold">Facebook</span> and <span className="text-brand-purple font-bold">more</span>.
                     </p>
                     <p className="text-white mb-4">
-                        Our team members approach your site with the know-how gained from years working with enterprise level companies such as Disney, Target, Facebook and more.
+                        We work with you to determine your business goals, timeline and budget. Leave the techy stuff to the llama herd, we've got you covered!
                     </p>
                     <div className='flex justify-center md:justify-start'>
                         <a href='#contact' className="flex justify-center items-center leading-light bg-purple-600 text-white font-semibold py-2 px-4 rounded-full mt-4">

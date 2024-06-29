@@ -4,9 +4,11 @@ function ServicesTypes() {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <section className="bg-zinc-100 p-6 pb-20" id="services">
-            <div className="max-w-[1000px] mx-auto">
-                <div className="text-center mt-8">
+        <section className="bg-zinc-100 pt-12 pb-16 md:pb-20 mt-4 md:-mb-4 px-4 md:px-0
+        bg-[url(src/assets/tech-bg-left-m.png),url(src/assets/tech-bg-right-m.png)] [background-size:30%,30%] md:[background-size:10%,10%]
+         bg-no-repeat [background-position:left_top,right_bottom]" id="services">
+            <div className="max-w-[1000px] mx-auto  mt-8 mb-8">
+                <div className="text-center">
                     <h2 className="text-brand-teal mb-8">Llama Technology</h2>
                     <p className="text-zinc-700 mt-2">Not sure what you need? Send us a message and we'll help you figure it out!</p>
                 </div>
