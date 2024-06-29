@@ -38,6 +38,8 @@ export default {
             backgroundImage: {
                 'intro-left': "url('src/assets/intro-hex-grid.png')",
                 'intro-right': "url('src/assets/intro-cyber-lines.png')",
+                'tech': "url('src/assets/side-background-left.png')",
+                'also-tech': "url('src/assets/side-background-right.png'"
             },
             listStyleImage: {
                 "checkmark": 'url("./src/assets/check.svg")',

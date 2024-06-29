@@ -37,7 +37,7 @@ function PricingSection() {
 
                 {/* Basic Card */}
                 <div className={cardClasses}>
-                    <PriceTag label="Standard Website" pages="1 Page" bgColor="bg-brand-green" price="starting at $600" />
+                    <PriceTag label="Standard" pages="1 Page" bgColor="bg-brand-green" price="starting at $600" />
                     <div className="text-2xl bg-white rounded-3xl p-8">
                         <ListItem label="Domain migration" />
                         <ListItem label="Social Media Integration" />
