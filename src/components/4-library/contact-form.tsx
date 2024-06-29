@@ -25,14 +25,14 @@ export function ContactForm(props: ContactFormProps) {
     }, []);
 
     return (
-        <section className="bg-brand-blue pt-[27rem] pb-20 mt-[-21rem]">
+        <section className="bg-brand-blue pt-[27rem] pb-20 mt-[-21rem]" >
 
-            <div className="max-w-[1200px] mx-auto">
+            <div className="max-w-[1200px] mx-auto" id="contact">
                 <img src={mascot} alt={mascotAlt} className="w-full max-w-[100px] mx-auto md:ml-[15%]" />
                 <h2 className="text-center my-8 text-white before:content-llama-contact-form md:-mt-[100px] md:mb-[100px]">Let's Get In Touch!</h2>
             </div>
 
-            <div className="max-w-[1000px] bg-white mx-auto rounded-3xl">
+            <div className="max-w-[1000px] bg-white mx-auto rounded-3xl shadow-md">
                 <iframe
                     className="w-full"
                     src="https://hello.dubsado.com/public/form/view/659d89e29a4d93003a7ea7ab"
@@ -40,6 +40,6 @@ export function ContactForm(props: ContactFormProps) {
                 </iframe>
             </div>
 
-        </section>
+        </section >
     );
 }

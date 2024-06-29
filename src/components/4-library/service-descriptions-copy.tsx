@@ -16,7 +16,7 @@ function ServicesDescriptionCopy() {
             {/* row 1 */}
             <div className='flex justify-end'>
                 <div className="flex w-[90%] 3xl:w-full 2xl:justify-end">
-                    <div className="bg-brand-blue mr-8 p-10 rounded-3xl">
+                    <div className="bg-brand-blue mr-8 p-10 rounded-3xl hidden md:block">
                         <img src="src\assets\tech-icon1.png" alt="" className="max-w-[150px]" />
                     </div>
                     <div className="bg-brand-blue bg-intro-left bg-contain bg-no-repeat bg-right p-8 rounded-l-3xl flex">
@@ -39,7 +39,7 @@ function ServicesDescriptionCopy() {
                             <p className="text-white">There's no drama with Sitellama. Our clients' sites are built with purpose. Whether you need a simple landing page or a jaw-dropping, multi-page masterpiece to showcase your work, Sitellama creates custom websites that prioritize your business's needs.</p>
                         </div>
                     </div>
-                    <div className="bg-brand-blue ml-8 p-10 rounded-3xl">
+                    <div className="bg-brand-blue ml-8 p-10 rounded-3xl hidden md:block">
                         <img src="src\assets\tech-icon2.png" alt="" className="max-w-[150px]" />
                     </div>
                 </div>
