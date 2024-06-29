@@ -12,7 +12,7 @@ function ServicesDescriptionCopy() {
     };
 
     return (
-        <section className="mt-16 flex flex-col">
+        <section className="flex flex-col">
             {/* row 1 */}
             <div className='flex justify-end'>
                 <div className="flex w-[90%] 3xl:w-full 2xl:justify-end">

@@ -53,8 +53,11 @@ export default {
                 '4': '4px',
                 '5': '5px',
             },
-            }
-        },
+            screens: {
+                'xxl': '1280px',
+            },
+        }
+    },
     plugins: [
         require("./tailwind/tailwind-plugin-debug-screens"),
     ],

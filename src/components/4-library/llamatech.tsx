@@ -3,7 +3,7 @@ import React from 'react';
 
 function LlamaTech() {
     return (
-        <section className="px-4 md:px-0">
+        <section className="px-4 md:px-0" id='growth'>
             <h2 className="text-center text-brand-blue dark:text-blue-400 mb-16 mt-4">
                 How <span className="text-brand-teal">Llama Tech</span> Helps <br></br> <span className="md:whitespace-nowrap">Businesses Grow</span>
             </h2>
@@ -60,11 +60,11 @@ function LlamaTech() {
                     <p className="text-white mb-4">
                         We work with you to determine your business goals, timeline and budget. Leave the techy stuff to the llama herd, we've got you covered!
                     </p>
-                    <div className='flex justify-center'>
-                        <button className="flex justify-center items-center leading-light bg-purple-600 text-white font-semibold py-2 px-4 rounded-full mt-4">
+                    <div className='flex justify-center md:justify-start'>
+                        <a href='#contact' className="flex justify-center items-center leading-light bg-purple-600 text-white font-semibold py-2 px-4 rounded-full mt-4">
                             Let's Get Started
                             <ArrowRight className="inline-block ml-3 stroke-3 text-brand-white size-4" />
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
