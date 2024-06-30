@@ -40,7 +40,7 @@ function PricingSection() {
                 for prcing on other services or websites beyond 5 pages.
             </p>
 
-            <div className="px-12 w-full flex flex-col md:flex-row items-center justify-center gap-8 mt-16">
+            <div className="px-12 w-[90%] flex flex-col md:flex-row items-center justify-center gap-8 mt-16">
 
                 {/* Basic Card */}
                 <div className={cardClasses}>
@@ -64,7 +64,7 @@ function PricingSection() {
                         <ListItem label="BASIC package plus..." />
                         {/* update 'basic' color */}
                         <ListItem label="Google Analytics" />
-                        <ListItem label="Personalized Website Strategy" />
+                        <ListItem label="Custom Website Strategy" />
                         <ListItem label="Interactive Elements" />
                         <ListItem label="1 Contact Form" />
                         <ListItem label="Personalized SEO" />

@@ -23,7 +23,7 @@ function HeroBanner() {
             <div className="flex flex-col md:flex-row w-[85%] max-w-[980px]">
 
                 <div className="w-full text-center text-white flex flex-col items-center font-headings">
-                    <div className={`flex justify-center mt-10 md:mt-0 sm:px-3`}>
+                    <div className={`w-min flex justify-center mt-10 md:mt-0 sm:px-3`}>
                         <h1 className="md:px-2 text-4xl md:text-[3rem] font-bold uppercase leading-[1.25] tracking-[1px]">In
                             <span className="text-brand-purple"> need </span>
                             of <span className="whitespace-nowrap"> a website?</span>
