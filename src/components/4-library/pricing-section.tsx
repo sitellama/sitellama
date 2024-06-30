@@ -29,12 +29,16 @@ const cardClasses = "flex-1 lg:max-w-96 bg-white rounded-3xl md:hover:scale-105 
 
 function PricingSection() {
     return (
-        <section className="bg-gray-100 flex flex-col items-center justify-center pt-32 !bg-no-repeat" id="pricing" style={{background: bgImg}}>
+        <section className="bg-gray-100 flex flex-col items-center justify-center pt-32 !bg-no-repeat" id="pricing" style={{ background: bgImg }}>
             <h2 className="bgImg mb-8">
                 <span className="text-brand-purple">Website</span> Packages
             </h2>
 
-            <p className="text-zinc-700 mt-2 w-[90%] text-center font-medium">We offer hosting, branding and maintenance but we specialize in web development. Here are our most popular website packages. Please <a href="#contact" className="underline">contact us</a> for prcing on other services or websites beyond 5 pages.</p>
+            <p className="text-zinc-700 mt-2 w-[90%] text-center font-medium">
+                We offer hosting, branding and maintenance but we specialize in web development. Here are our most popular website packages. Please
+                <a href="#contact" className="underline"> contact us </a>
+                for prcing on other services or websites beyond 5 pages.
+            </p>
 
             <div className="px-12 w-full flex flex-col md:flex-row items-center justify-center gap-8 mt-16">
 
