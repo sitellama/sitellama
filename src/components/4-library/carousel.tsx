@@ -1,11 +1,8 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css';
-import { classNames } from "@/utils";
-import arrow from '../../../src/assets/arrow.svg';
-import example1 from '../../../src/assets/example1.png';
 import example2 from '../../../src/assets/example2.png';
 import example3 from '../../../src/assets/example3.png';
 import example4 from '../../../src/assets/example4.png';

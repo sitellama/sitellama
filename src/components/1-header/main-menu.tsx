@@ -1,7 +1,7 @@
-import { CSSProperties, useRef, useState } from "react";
-import { Link, Location, NavLink, useLocation } from "react-router-dom";
+import { useRef, useState } from "react";
+import { Location, useLocation } from "react-router-dom";
 import { useClickAway } from "react-use";
-import { classNames, cn } from "@/utils";
+import { classNames } from "@/utils";
 import { IconCross, IconHamburger } from "@/ui";
 import { createPortal } from "react-dom";
 
