@@ -3,10 +3,11 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css';
-import example1 from '../../../src/assets/example1.png';
-import example2 from '../../../src/assets/example2.png';
-import example3 from '../../../src/assets/example3.png';
-import example4 from '../../../src/assets/example4.png';
+import tornjak from '../../../src/assets/mockup-tornjak.png';
+import tornjakTwo from '../../../src/assets/mockup-tornjak2.png';
+import kcrafts from '../../../src/assets/mockup-kcrafts.png';
+import dynamic from '../../../src/assets/mockup-dynamic-equine.png';
+import dndivination from '../../../src/assets/mockup-dndivination.png';
 import { ArrowLeft } from "@/ui/icons/arrow-left";
 import { ArrowRight } from "@/ui/icons/arrow-right";
 
@@ -27,19 +28,23 @@ export default function Carousel() {
     const data = [
         {
             name: "1",
-            img: example3,
+            img: dynamic,
         },
         {
             name: "2",
-            img: example1,
+            img: tornjak,
         },
         {
             name: "3",
-            img: example2,
+            img: kcrafts,
         },
         {
-            name: "3",
-            img: example4,
+            name: "4",
+            img: dndivination,
+        },
+        {
+            name: "5",
+            img: tornjakTwo,
         },
     ];
 
@@ -49,7 +54,7 @@ export default function Carousel() {
         infinite: true,
         speed: 800,
         slidesToScroll: 1,
-        centerMode: true,
+        // centerMode: true,
         // centerPadding: "0px",
         // className: "bg-red-500",
         // autoplay: true,
@@ -60,25 +65,25 @@ export default function Carousel() {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     infinite: true,
                 }
             },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
+            // {
+            //     breakpoint: 600,
+            //     settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 2,
+            //         initialSlide: 2,
+            //     }
+            // },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
         ]
     };
     return (
