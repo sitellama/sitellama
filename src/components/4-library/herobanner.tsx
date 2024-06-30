@@ -33,11 +33,11 @@ function HeroBanner() {
                         <p className="text-[28px] font-headings md:mb-8">No Prob-llama!</p>
                     </div>
                     <div className="flex justify-center gap-x-4 text-center w-[100%]">
-                        <a className="w-[170px] btn bg-brand-purple text-white mt-0 px-4" href="#growth">
+                        <a className="w-[180px] btn bg-brand-purple text-white mt-0 px-4" href="#growth">
                             View Services
                             <ArrowRight className="hidden md:inline-block ml-3 stroke-3 text-white size-4" />
                         </a>
-                        <a className="w-[170px] btn bg-brand-green-light text-black mt-0 px-4" href="#contact">
+                        <a className="w-[180px] btn bg-brand-green-light text-black mt-0 px-4" href="#contact">
                             Book A Call
                             <ArrowRight className="hidden md:inline-block ml-3 stroke-3 text-brand-purple size-4" />
                         </a>
