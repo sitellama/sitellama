@@ -23,8 +23,8 @@ function HeroBanner() {
             <div className="flex flex-col md:flex-row w-[85%] max-w-[980px]">
 
                 <div className="w-full text-center text-white flex flex-col items-center font-headings">
-                    <div className={`mt-10 md:mt-0 px-3 md:w-[90%] `}>
-                        <h1 className="px-10 md:px-2 text-[3rem] font-bold uppercase leading-[1.25] tracking-[1px]">In
+                    <div className={`flex justify-center mt-10 md:mt-0 sm:px-3`}>
+                        <h1 className="md:px-2 text-4xl md:text-[3rem] font-bold uppercase leading-[1.25] tracking-[1px]">In
                             <span className="text-brand-purple"> need </span>
                             of <span className="whitespace-nowrap"> a website?</span>
                         </h1>
@@ -33,7 +33,7 @@ function HeroBanner() {
                         <p className="text-[28px] font-headings md:mb-8">No Prob-llama!</p>
                     </div>
                     <div className="flex justify-center gap-x-4 text-center w-[100%]">
-                        <a className="w-[180px] btn bg-brand-purple text-white mt-0 px-4" href="#growth">
+                        <a className="w-[180px] btn bg-brand-purple text-white mt-0 px-4" href="#services">
                             View Services
                             <ArrowRight className="hidden md:inline-block ml-3 stroke-3 text-white size-4" />
                         </a>
