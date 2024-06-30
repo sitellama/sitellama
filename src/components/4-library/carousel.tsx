@@ -1,12 +1,14 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css';
-import { classNames } from "@/utils";
-import arrow from '../../../src/assets/arrow.svg';
+import example2 from '../../../src/assets/example2.png';
+import example3 from '../../../src/assets/example3.png';
+import example4 from '../../../src/assets/example4.png';
 import { ArrowLeft } from "@/ui/icons/arrow-left";
 import { ArrowRight } from "@/ui/icons/arrow-right";
+
 
 export default function Carousel() {
     let sliderRef = useRef(null);
@@ -24,19 +26,19 @@ export default function Carousel() {
     const data = [
         {
             name: "1",
-            img: "src/assets/example1.png",
+            img: example4,
         },
         {
             name: "2",
-            img: "src/assets/example2.png",
+            img: example2,
         },
         {
             name: "3",
-            img: "src/assets/example3.png",
+            img: example3,
         },
         {
             name: "3",
-            img: "src/assets/example4.png",
+            img: example4,
         },
     ];
 
@@ -97,7 +99,7 @@ export default function Carousel() {
                 </div>
             </div>
 
-            <div className="flex justify-center md:justify-end gap-12 mt-4 md:mr-4">
+            <div className="flex justify-center md:justify-end gap-6 mt-4 md:mr-4">
                 <button className="bg-brand-purple rounded-full p-2" onClick={previous}>
                     <ArrowLeft className="size-8 stroke-white" />
                     <span className="sr-only">

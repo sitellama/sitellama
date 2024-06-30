@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import techIcon1 from '../../../src/assets/tech-icon1.png';
+import techIcon2 from '../../../src/assets/tech-icon2.png';
 
-function ServicesDescriptionCopy() {
+function Intro() {
     const [hovered, setHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -17,7 +19,7 @@ function ServicesDescriptionCopy() {
             <div className='flex justify-end'>
                 <div className="flex w-[90%] 3xl:w-full 2xl:justify-end">
                     <div className="bg-brand-blue mr-8 p-10 rounded-3xl hidden md:block">
-                        <img src="src\assets\tech-icon1.png" alt="" className="max-w-[150px]" />
+                        <img src={techIcon1} alt="" className="max-w-[150px]" />
                     </div>
                     <div className="bg-brand-blue bg-intro-left bg-contain bg-no-repeat bg-right p-8 rounded-l-3xl flex">
                         <div className="lg:max-w-[90%]">
@@ -40,7 +42,7 @@ function ServicesDescriptionCopy() {
                         </div>
                     </div>
                     <div className="bg-brand-blue ml-8 p-10 rounded-3xl hidden md:block">
-                        <img src="src\assets\tech-icon2.png" alt="" className="max-w-[150px]" />
+                        <img src={techIcon2} alt="" className="max-w-[150px]" />
                     </div>
                 </div>
             </div>
@@ -49,4 +51,4 @@ function ServicesDescriptionCopy() {
     );
 }
 
-export default ServicesDescriptionCopy;
+export default Intro;

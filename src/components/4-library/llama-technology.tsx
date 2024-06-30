@@ -1,12 +1,17 @@
 import { useState } from "react";
+import techLeft from '../../../src/assets/tech-bg-left-m.png';
+import techRigth from '../../../src/assets/tech-bg-right-m.png';
 
-function ServicesTypes() {
+function LlamaTechnology() {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <section className="bg-zinc-100 pt-12 pb-16 md:pb-20 mt-4 md:-mb-4 px-4 md:px-0
-        bg-[url(src/assets/tech-bg-left-m.png),url(src/assets/tech-bg-right-m.png)] [background-size:30%,30%] md:[background-size:10%,10%]
-         bg-no-repeat [background-position:left_top,right_bottom]" id="services">
+        <section
+            className={`bg-zinc-100 pt-12 pb-16 md:pb-20 mt-4 md:-mb-4 px-4 md:px-0
+            bg-[${techLeft},${techRigth}] [background-size:30%,30%] md:[background-size:10%,10%]
+            bg-no-repeat [background-position:left_top,right_bottom]`}
+            id="services"
+        >
             <div className="max-w-[1000px] mx-auto  mt-8 mb-8">
                 <div className="text-center">
                     <h2 className="text-brand-teal mb-8">Llama Technology</h2>
@@ -42,5 +47,4 @@ function ServicesTypes() {
         </section>
     );
 }
-
-export default ServicesTypes;
+export default LlamaTechnology;

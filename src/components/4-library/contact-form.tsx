@@ -16,7 +16,6 @@ export function ContactForm(props: ContactFormProps) {
         isFirstTime.current = false;
 
         const resizer = (window as any).iFrameResize;
-        console.log('resizer2', resizer);
 
         resizer?.({
             checkOrigin: false,

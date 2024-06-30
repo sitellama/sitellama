@@ -10,7 +10,7 @@ function HeroBanner() {
     const sectionStyles = "\
     w-full \
     bg-gradient-to-br from-grad-hero-top to-grad-hero-bottom \
-    py-16 md:pt-32 mb-16 mx-auto \
+    py-16 md:pt-32 mb-24 md:mb-16 mx-auto \
     rounded-b-3xl \
     flex justify-center \
     md:relative \
