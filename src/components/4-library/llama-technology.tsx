@@ -18,7 +18,7 @@ function LlamaTechnology() {
             <div className="max-w-[1000px] mx-auto  mt-8 mb-8">
                 <div className="text-center">
                     <h2 className="text-brand-teal mb-8">Llama Technology</h2>
-                    <p className="text-zinc-700 mt-2">Not sure what you need? Send us a message and we'll help you figure it out!</p>
+                    <p className="text-zinc-700 mt-2 font-medium">Not sure what you need? Send us a message and we'll help you figure it out!</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 mt-16 text-center">
                     <div className="bg-gray-50 p-8 rounded-3xl shadow-md hover:bg-brand-purple hover:text-white hover:transform hover:scale-105 transition-transform relative">
