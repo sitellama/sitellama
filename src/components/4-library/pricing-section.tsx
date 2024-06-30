@@ -29,7 +29,7 @@ const cardClasses = "flex-1 lg:max-w-96 bg-white rounded-3xl md:hover:scale-105 
 
 function PricingSection() {
     return (
-        <section className="bg-gray-100 flex flex-col items-center justify-center pt-32 !bg-no-repeat" id="pricing" style={{background: bgImg}}>
+        <section className="bg-gray-100 flex flex-col items-center justify-center pt-32 mt-8 !bg-no-repeat" id="pricing" style={{ background: bgImg }}>
             <h2 className="bgImg mb-8">
                 <span className="text-brand-purple">Website</span> Packages
             </h2>
