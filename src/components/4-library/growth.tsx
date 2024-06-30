@@ -1,5 +1,4 @@
 import { ArrowRight } from '@/ui';
-import React from 'react';
 import llamaTech2d from '../../../src/assets/llama-tech-2-desktop-v2.png';
 import viewMoreWork from '../../../src/assets/view-more-work.png';
 import llamaTech1d from '../../../src/assets/llama-tech-1-desktop.png';
@@ -15,11 +14,11 @@ function Growth() {
             <div className="flex justify-center items-center flex-col md:flex-row md:space-x-4 md:mb-8">
                 <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">GET DISCOVERED</p>
                 <p className="flex items-center">
-                    <span className="text-gray-500">&#8594;</span> {/* Right-pointing arrow */}
+                    <p className="text-gray-500"><ArrowRight className="size-8 stroke-brand-purple rotate-90 md:rotate-0" /></p> {/* Right-pointing arrow */}
                 </p>
                 <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">BUILD TRUST</p>
                 <p className="flex items-center">
-                    <span className="text-gray-500">&#8594;</span> {/* Right-pointing arrow */}
+                    <p className="text-gray-500"><ArrowRight className="size-8 stroke-brand-purple rotate-90 md:rotate-0" /></p> {/* Right-pointing arrow */}
                 </p>
                 <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">ENGAGE CLIENTS</p>
             </div>
