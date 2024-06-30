@@ -1,5 +1,4 @@
 import { ArrowRight } from '@/ui';
-import React from 'react';
 import llamaTech2d from '../../../src/assets/llama-tech-2-desktop-v2.png';
 import viewMoreWork from '../../../src/assets/view-more-work.png';
 import llamaTech1d from '../../../src/assets/llama-tech-1-desktop.png';
