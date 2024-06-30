@@ -3,14 +3,17 @@ import techLeft from '../../../src/assets/tech-bg-left-m.png';
 import techRigth from '../../../src/assets/tech-bg-right-m.png';
 
 function LlamaTechnology() {
-    const [isHovered, setIsHovered] = useState(false);
+    const left = `url(${techLeft})`;
+    const right = `url(${techRigth})`;
+
 
     return (
         <section
             className={`bg-zinc-100 pt-12 pb-16 md:pb-20 mt-4 md:-mb-4 px-4 md:px-0
-            bg-[${techLeft},${techRigth}] [background-size:30%,30%] md:[background-size:10%,10%]
-            bg-no-repeat [background-position:left_top,right_bottom]`}
+            ![background-size:30%,30%] md:![background-size:10%,10%]
+            !bg-no-repeat ![background-position:left_top,right_bottom]`}
             id="services"
+            style={{background: `${left}, ${right}`}}
         >
             <div className="max-w-[1000px] mx-auto  mt-8 mb-8">
                 <div className="text-center">

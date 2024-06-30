@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css';
+import example1 from '../../../src/assets/example1.png';
 import example2 from '../../../src/assets/example2.png';
 import example3 from '../../../src/assets/example3.png';
 import example4 from '../../../src/assets/example4.png';
@@ -26,15 +27,15 @@ export default function Carousel() {
     const data = [
         {
             name: "1",
-            img: example4,
+            img: example3,
         },
         {
             name: "2",
-            img: example2,
+            img: example1,
         },
         {
             name: "3",
-            img: example3,
+            img: example2,
         },
         {
             name: "3",
@@ -81,7 +82,7 @@ export default function Carousel() {
         ]
     };
     return (
-        <div>
+        <div className="flex flex-col items-center md:items-end">
             <div className="w-full">
                 <div className="mt-20">
                     <Slider {...settings} ref={slider => {
@@ -99,7 +100,7 @@ export default function Carousel() {
                 </div>
             </div>
 
-            <div className="flex justify-center md:justify-end gap-6 mt-4 md:mr-4">
+            <div className="flex justify-center md:justify-end max-w-[80%] gap-6 mt-4 md:mr-4">
                 <button className="bg-brand-purple rounded-full p-2" onClick={previous}>
                     <ArrowLeft className="size-8 stroke-white" />
                     <span className="sr-only">
