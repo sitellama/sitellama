@@ -1,9 +1,9 @@
 import { ArrowRight } from '@/ui';
 import React from 'react';
-import llamaTech2d from '../../../src/assets/llama-tech-2-desktop-v2.png'
-import viewMoreWork from '../../../src/assets/view-more-work.png'
-import llamaTech1d from '../../../src/assets/llama-tech-1-desktop.png'
-import llamaTech1m from '../../../src/assets/llama-tech-1-mobile.png'
+import llamaTech2d from '../../../src/assets/llama-tech-2-desktop-v2.png';
+import viewMoreWork from '../../../src/assets/view-more-work.png';
+import llamaTech1d from '../../../src/assets/llama-tech-1-desktop.png';
+import llamaTech1m from '../../../src/assets/llama-tech-1-mobile.png';
 
 function Growth() {
     return (
@@ -24,7 +24,7 @@ function Growth() {
                 <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">ENGAGE CLIENTS</p>
             </div>
 
-            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 md:p-10 rounded-3xl max-w-[1000px] mx-auto mt-16 md:mt-32">
+            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 pb-8 md:p-10 rounded-3xl max-w-[1000px] mx-auto mt-16 md:mt-32">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-4 md:mt-[-6rem]">
                     <div className="mr-[-10rem] flex flex-col align-start">
                         {/* <p className="text-brand-teal uppercase font-bold">helping</p> */}
@@ -68,8 +68,8 @@ function Growth() {
                         We work with you to determine your business goals, timeline and budget. Leave the techy stuff to the llama herd, we've got you covered!
                     </p>
                     <div className='flex justify-center md:justify-start'>
-                        <a href='#contact' className="flex justify-center items-center leading-light bg-purple-600 text-white font-semibold py-2 px-4 rounded-full mt-4">
-                            Let's Get Started
+                        <a href='#contact' className="flex justify-center items-center leading-light bg-brand-purple btn text-white w-fit px-4">
+                            Let's Start Today
                             <ArrowRight className="inline-block ml-3 stroke-3 text-brand-white size-4" />
                         </a>
                     </div>
