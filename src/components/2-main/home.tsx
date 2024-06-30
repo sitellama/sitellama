@@ -16,7 +16,7 @@ import Carousel from "../4-library/carousel";
 export function Home() {
     return (
         <>
-            <SEO title="Home Page" description="This is the home page" href="https:www.sitellama.com/" />
+            <SEO title="Home | Sitellama" description="We build custom websites with fast speeds, great user experiences and that meet your business needs." href="/" />
 
             <HeroBanner />
 
