@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import mascotSm from "../../assets/mobile-development-hero-centered.png";
+// import mascotSm from "../../assets/mobile-development-hero-centered.webp";
 import mascotLg from "../../assets/mobile-development-hero.png";
+// import mascotLg from "../../assets/mobile-development-hero.webp";
+
 import { ArrowRight } from "@/ui";
 
 function HeroBanner() {

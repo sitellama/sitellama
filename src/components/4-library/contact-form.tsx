@@ -33,6 +33,7 @@ export function ContactForm(props: ContactFormProps) {
 
             <div className="max-w-[1000px] mx-4 bg-white md:mx-auto rounded-3xl shadow-md">
                 <iframe
+                    title="contact form"
                     className="w-full"
                     src="https://hello.dubsado.com/public/form/view/659d89e29a4d93003a7ea7ab"
                 >

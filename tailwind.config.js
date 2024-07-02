@@ -39,13 +39,15 @@ export default {
             backgroundImage: {
                 'intro-left': "url('src/assets/intro-hex-grid.png')",
                 'intro-right': "url('src/assets/intro-cyber-lines.png')",
+                // 'intro-left': "url('src/assets/intro-hex-grid.webp')",
+                // 'intro-right': "url('src/assets/intro-cyber-lines.webp')",
                 'tech': "url('src/assets/side-background-left.png')",
-                'also-tech': "url('src/assets/side-background-right.png'"
+                'also-tech': "url('src/assets/side-background-right.png'",
+                // 'tech': "url('src/assets/side-background-left.webp')",
+                // 'also-tech': "url('src/assets/side-background-right.webp'"
             },
             listStyleImage: {
                 "checkmark": 'url("./src/assets/check.svg")',
-                // "checkmark": 'url("./src/assets/smileyface.svg")',
-                // "checkmark": 'url("./src/assets/smileyface-copy.svg")',
                 "cross": 'url("./src/assets/cross.svg")',
             },
             strokeWidth: {

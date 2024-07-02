@@ -8,6 +8,11 @@ import tornjakTwo from '../../../src/assets/mockup-tornjak2.png';
 import kcrafts from '../../../src/assets/mockup-kcrafts.png';
 import dynamic from '../../../src/assets/mockup-dynamic-equine.png';
 import dndivination from '../../../src/assets/mockup-dndivination.png';
+// import tornjak from '../../../src/assets/mockup-tornjak.webp';
+// import tornjakTwo from '../../../src/assets/mockup-tornjak2.webp';
+// import kcrafts from '../../../src/assets/mockup-kcrafts.webp';
+// import dynamic from '../../../src/assets/mockup-dynamic-equine.webp';
+// import dndivination from '../../../src/assets/mockup-dndivination.webp';
 import { ArrowLeft } from "@/ui/icons/arrow-left";
 import { ArrowRight } from "@/ui/icons/arrow-right";
 

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import techIcon1 from '../../../src/assets/tech-icon1.png';
 import techIcon2 from '../../../src/assets/tech-icon2.png';
+// import techIcon1 from '../../../src/assets/tech-icon1.webp';
+// import techIcon2 from '../../../src/assets/tech-icon2.webp';
 
 function Intro() {
     const [hovered, setHovered] = useState(false);
