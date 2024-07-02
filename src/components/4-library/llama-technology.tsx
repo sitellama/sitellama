@@ -9,7 +9,7 @@ function LlamaTechnology() {
 
     return (
         <section
-            className={`bg-zinc-100 pt-12 pb-16 md:pb-20 mt-4 md:-mb-4 px-4 md:px-0
+            className={`w-[90%] m-auto bg-zinc-100 pt-12 pb-16 md:pb-20 mt-4 md:-mb-4 md:px-0
             ![background-size:30%,30%] md:![background-size:10%,10%]
             !bg-no-repeat ![background-position:left_top,right_bottom]`}
             id="services"
