@@ -7,6 +7,8 @@ import { classNames } from "@/utils";
 
 ReactGA.initialize('UA-000000-01');
 
+const debugClasses = import.meta.env.PROD ? "" : "debug-screens";
+
 export function Root() {
     const loc = useLocation();
 
@@ -17,7 +19,7 @@ export function Root() {
     );
 
     return (<>
-        <div className="relative bg-zinc-100">
+        <div className={`relative bg-zinc-100 ${debugClasses}`}>
             <Header className={classNames(loc.pathname === "/" && "absolute")} />
             <Outlet />
         </div>

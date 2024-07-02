@@ -18,16 +18,14 @@ import { ArrowRight } from "@/ui/icons/arrow-right";
 
 
 export default function Carousel() {
-    let sliderRef = useRef(null);
+    const sliderRef = useRef<Slider>(null);
 
     const next = () => {
-        // @ts-ignore
-        sliderRef.slickNext();
+        sliderRef.current?.slickNext();
     };
 
     const previous = () => {
-        // @ts-ignore
-        sliderRef.slickPrev();
+        sliderRef.current?.slickPrev();
     };
 
     const data = [
@@ -95,10 +93,7 @@ export default function Carousel() {
         <div className="flex flex-col items-center md:items-end">
             <div className="w-full">
                 <div className="mt-20">
-                    <Slider {...settings} ref={slider => {
-                        // @ts-ignore
-                        sliderRef = slider;
-                    }}>
+                    <Slider {...settings} ref={sliderRef}>
                         {data.map((item, index) => (
                             <div className=" text-green-400 rounded-xl" key={index}>
                                 <div className="rounded-t-xl flex justify-center items-center">
