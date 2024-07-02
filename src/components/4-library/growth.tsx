@@ -3,6 +3,11 @@ import llamaTech2d from '../../../src/assets/llama-tech-2-desktop-v2.png';
 import viewMoreWork from '../../../src/assets/view-more-work.png';
 import llamaTech1d from '../../../src/assets/llama-tech-1-desktop.png';
 import llamaTech1m from '../../../src/assets/llama-tech-1-mobile.png';
+// import llamaTech2d from '../../../src/assets/llama-tech-2-desktop-v2.webp';
+// import viewMoreWork from '../../../src/assets/view-more-work.webp';
+// import llamaTech1d from '../../../src/assets/llama-tech-1-desktop.webp';
+// import llamaTech1m from '../../../src/assets/llama-tech-1-mobile.webp';
+
 
 function Growth() {
     return (
@@ -26,9 +31,7 @@ function Growth() {
             <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 pb-8 md:p-10 rounded-3xl max-w-[1000px] mx-auto mt-16 md:mt-32">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-4 md:mt-[-6rem]">
                     <div className="mr-[-10rem] flex flex-col align-start">
-                        {/* <p className="text-brand-teal uppercase font-bold">helping</p> */}
                         <p className="text-white text-xl font-bold">SMALL BUSINESS</p>
-                        {/* <p className="text-brand-teal uppercase font-bold">achieve</p> */}
                         <p className="text-white text-5xl font-bold">BIG GOALS</p>
                     </div>
                     <img src={llamaTech1d} alt="sample of web design work on a laptop" className="hidden md:block max-w-[80%]" />
@@ -47,13 +50,11 @@ function Growth() {
                     </div>
                     <div className=" md:order-1 self-center md:w-[54%]">
                         <img src={llamaTech2d} alt="sample of web design work on a tablet and phone" className=" max-w-[75%] md:max-w-[80%] mb-4 mt-8 md:mt-0" />
-                        {/* <img src="src/assets/llama-tech-2-mobile.png" alt="sample of web design work on a tablet and phone" className="md:hidden mt-8 mb-4" /> */}
                     </div>
                 </div>
 
                 <div className="w-5/6 md:w-3/6 mx-auto -mt-[2rem]">
                     <img src={viewMoreWork} alt="sample of web design work on a tablet and phone"></img>
-                    {/* <img src="src/assets/view-more-work.png" alt="sample of web design work on a tablet and phone"></img> */}
                 </div>
 
 

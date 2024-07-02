@@ -41,7 +41,7 @@ function Intro() {
             {/* row 2 */}
             <div className="flex mt-16 justify-start">
                 <div className="flex w-[90%]">
-                    <div className="!bg-brand-blue !bg-contain !bg-no-repeat p-8 rounded-r-3xl flex justify-end" style={{background: bgRight}}>
+                    <div className="!bg-brand-blue !bg-contain !bg-no-repeat p-8 rounded-r-3xl flex justify-end" style={{ background: bgRight }}>
                         <div className="lg:max-w-[75%]">
                             <h2 className="text-white text-3xl" >All Business, No Drama</h2>
                             <p className="text-white">There's no drama with Sitellama. Our clients' sites are built with purpose. Whether you need a simple landing page or a jaw-dropping, multi-page masterpiece to showcase your work, Sitellama creates custom websites that prioritize your business's needs.</p>

@@ -46,8 +46,6 @@ export default {
             },
             listStyleImage: {
                 "checkmark": 'url("./src/assets/check.svg")',
-                // "checkmark": 'url("./src/assets/smileyface.svg")',
-                // "checkmark": 'url("./src/assets/smileyface-copy.svg")',
                 "cross": 'url("./src/assets/cross.svg")',
             },
             strokeWidth: {

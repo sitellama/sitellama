@@ -1,5 +1,7 @@
 import { IconCheck, IconCross } from "@/ui";
 import pricingBackground from '../../../src/assets/llama-pricing-background-v2.png';
+// import pricingBackground from '../../../src/assets/llama-pricing-background-v2.webp';
+
 
 const bgImg = `url(${pricingBackground})`;
 
