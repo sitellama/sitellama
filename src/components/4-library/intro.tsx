@@ -6,6 +6,14 @@ import right from '../../../src/assets/intro-cyber-lines.png';
 const bgLeft = `url(${left})`;
 const bgRight = `url(${right})`;
 
+const imgClasses = `[background-image:var(--this-image)]`;
+// const imgClasses = `!bg-red-500 [--this-image:"${techIcon1}"]`;
+// const imgClasses = `!bg-red-500 [--this-image:"1"]`;
+
+const inlineStyles =  {
+    "--this-image": `url(${left})`
+};
+
 function Intro() {
     return (
         <section className="flex flex-col">
@@ -16,7 +24,10 @@ function Intro() {
                         <img src={techIcon1} alt="" className="max-w-[150px]" />
                     </div>
 
-                    <div className="!bg-brand-blue !bg-contain !bg-no-repeat !bg-right p-8 rounded-l-3xl flex" style={{background: bgLeft}}>
+                    {/* <div className={`!bg-brand-blue !bg-contain !bg-no-repeat !bg-right p-8 rounded-l-3xl flex ${imgClasses}`} style={{background: bgLeft}}> */}
+                    {/* <div className={`!bg-brand-blue !bg-contain !bg-no-repeat !bg-right p-8 rounded-l-3xl flex [background-image:var(--this-image)]`} style={inlineStyles}> */}
+                    {/* <div className={`!bg-brand-blue !bg-contain !bg-no-repeat !bg-right p-8 rounded-l-3xl flex bg-intro-left bg-this-image`} style={inlineStyles}> */}
+                    <div className={`!bg-brand-blue !bg-contain !bg-no-repeat !bg-right p-8 rounded-l-3xl flex bg-intro-left bg-this-image`} style={{"--this-image": `url(${left})`}}>
                         <div className="lg:max-w-[90%]">
                             <h2 className="text-white text-3xl">Time To Stand Out From The Herd</h2>
                             <div className="lg:max-w-[75%]">
