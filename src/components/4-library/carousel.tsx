@@ -3,16 +3,11 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css';
-import tornjak from '../../../src/assets/mockup-tornjak.png';
-import tornjakTwo from '../../../src/assets/mockup-tornjak2.png';
-import kcrafts from '../../../src/assets/mockup-kcrafts.png';
-import dynamic from '../../../src/assets/mockup-dynamic-equine.png';
-import dndivination from '../../../src/assets/mockup-dndivination.png';
-// import tornjak from '../../../src/assets/mockup-tornjak.webp';
-// import tornjakTwo from '../../../src/assets/mockup-tornjak2.webp';
-// import kcrafts from '../../../src/assets/mockup-kcrafts.webp';
-// import dynamic from '../../../src/assets/mockup-dynamic-equine.webp';
-// import dndivination from '../../../src/assets/mockup-dndivination.webp';
+import tornjak from '../../../src/assets/mockup-tornjak.webp';
+import tornjakTwo from '../../../src/assets/mockup-tornjak2.webp';
+import kcrafts from '../../../src/assets/mockup-kcrafts.webp';
+import dynamic from '../../../src/assets/mockup-dynamic-equine.webp';
+import dndivination from '../../../src/assets/mockup-dndivination.webp';
 import { ArrowLeft } from "@/ui/icons/arrow-left";
 import { ArrowRight } from "@/ui/icons/arrow-right";
 
@@ -30,23 +25,23 @@ export default function Carousel() {
 
     const data = [
         {
-            name: "1",
+            name: "Custom website designed and built by Sitellama for The Dynamic Equine",
             img: dynamic,
         },
         {
-            name: "2",
+            name: "Custom website designed and built by Sitellama for Tornjak Club of North America",
             img: tornjak,
         },
         {
-            name: "3",
+            name: "Custom website designed and built by Sitellama for Kcrafts",
             img: kcrafts,
         },
         {
-            name: "4",
+            name: "Custom website designed and built by Sitellama for DnDivination",
             img: dndivination,
         },
         {
-            name: "5",
+            name: "Custom website designed and built by Sitellama for Tornjak Club of North America",
             img: tornjakTwo,
         },
     ];

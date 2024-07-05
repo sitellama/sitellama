@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import mascotSm from "../../assets/mobile-development-hero-centered.png";
-// import mascotSm from "../../assets/mobile-development-hero-centered.webp";
-import mascotLg from "../../assets/mobile-development-hero.png";
-// import mascotLg from "../../assets/mobile-development-hero.webp";
+import mascotSm from "../../assets/mobile-development-hero-centered.webp";
+import mascotLg from "../../assets/mobile-development-hero.webp";
 
 import { ArrowRight } from "@/ui";
 
@@ -47,11 +45,10 @@ function HeroBanner() {
                     </div>
                 </div>
 
-                {/* <div className="mb-[-10rem] xxl:mb-[-12rem] md:mb-0 flex flex-col lg:flex-row xxl:relative md:w-full justify-end"> */}
                 <div className=" mb-[-10rem] md:mb-[-4] flex flex-col md:w-full justify-end">
                     <picture>
                         <source media="(min-width:768px)" srcSet={mascotLg} />
-                        <img src={mascotSm} alt="Logo" className={imgStyles} ></img>
+                        <img src={mascotSm} alt="Sitellama Logo" className={imgStyles} ></img>
                     </picture>
                 </div>
 

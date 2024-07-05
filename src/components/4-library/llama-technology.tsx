@@ -1,6 +1,7 @@
 import { useState } from "react";
-import techLeft from '../../../src/assets/tech-bg-left-m.png';
-import techRigth from '../../../src/assets/tech-bg-right-m.png';
+import techLeft from '../../../src/assets/tech-bg-left-m.webp';
+import techRigth from '../../../src/assets/tech-bg-right-m.webp';
+
 
 function LlamaTechnology() {
     const left = `url(${techLeft})`;
@@ -9,13 +10,13 @@ function LlamaTechnology() {
 
     return (
         <section
-            className={`w-[90%] m-auto bg-zinc-100 pt-12 pb-16 md:pb-20 mt-4 md:-mb-4 md:px-0
+            className={`m-auto bg-zinc-100 pt-12 pb-16 md:pb-20 mt-4 md:-mb-4 md:px-0
             ![background-size:30%,30%] md:![background-size:10%,10%]
             !bg-no-repeat ![background-position:left_top,right_bottom]`}
             id="services"
-            style={{background: `${left}, ${right}`}}
+            style={{ background: `${left}, ${right}` }}
         >
-            <div className="max-w-[1000px] mx-auto  mt-8 mb-8">
+            <div className="max-w-[1000px] mx-auto w-[90%] md:w-full mt-8 mb-8">
                 <div className="text-center">
                     <h2 className="text-brand-teal mb-8">Llama Technology</h2>
                     <p className="text-zinc-700 mt-2 font-medium">Not sure what you need? Send us a message and we'll help you figure it out!</p>
