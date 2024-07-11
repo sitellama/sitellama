@@ -31,7 +31,7 @@ export function ContactForm(props: ContactFormProps) {
                 <h2 className="text-center my-8 text-white before:content-llama-contact-form md:-mt-[100px] md:mb-[100px]">Let's Get In Touch!</h2>
             </div>
 
-            <div className="max-w-[1000px] mx-4 bg-white md:mx-auto rounded-3xl shadow-md">
+            <div className="max-w-[1000px] min-h-[880px] mx-4 bg-white md:mx-auto rounded-3xl shadow-md">
                 <iframe
                     title="contact form"
                     className="w-full"
