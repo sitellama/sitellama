@@ -1,3 +1,4 @@
+import path from 'path';
 import { UserConfig, defineConfig } from 'vite';
 import { PreRenderedAsset } from 'rollup';
 import react from '@vitejs/plugin-react';
@@ -42,7 +43,7 @@ export default defineConfig(({ command, mode }) => {
         },
         resolve: {
             alias: {
-                '@': '/src'
+                '@': path.resolve(__dirname, './src'),
             }
         }
     };

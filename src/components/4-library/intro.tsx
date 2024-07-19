@@ -8,13 +8,14 @@ const bgRight = `url(${right})`;
 
 const imgClasses = `[background-image:var(--this-image)]`;
 
-const inlineStyles = {
+const inlineClasses = {
     "--this-image": `url(${left})`
 };
 
 function Intro() {
     return (
         <section className="flex flex-col">
+
             {/* row 1 */}
             <div className='flex justify-end'>
                 <div className="flex w-[90%] 3xl:w-full 2xl:justify-end">
@@ -48,6 +49,7 @@ function Intro() {
                     </div>
                 </div>
             </div>
+            
         </section>
     );
 }
