@@ -39,7 +39,7 @@ export function PortfolioFeatured(
 
             <div>
                 <h2 className="text-center mb-8 mt-24">Recent Work</h2>
-                <img src={recentWork} alt={recentWorkAlt} className="-mb-12 mx-auto w-full max-w-[1200px]" />
+                <img src={recentWork} alt={recentWorkAlt} className="-mb-12 mx-auto w-full max-w-7xl h-[400px]" />
             </div>
 
 
@@ -69,7 +69,7 @@ export function PortfolioFeatured(
                             <a className="flex justify-center leading-light bg-brand-green-light btn" target="_blank" href="https://kcrafts.net/">
                                 Visit Live Site
                                 <span className="sr-only">{projectTwoDescSR}</span>
-                                <ArrowRight className="inline-block ml-3 stroke-3 text-brand-purple size-4" />
+                                <ArrowRight className="inline-block ml-3 stroke-3 text-brand-purple size-4 font-" />
                             </a>
                         </div>
                     </div>

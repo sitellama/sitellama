@@ -35,7 +35,7 @@ function PricingSection() {
                 <span className="text-brand-purple">Website</span> Packages
             </h2>
 
-            <p className="text-zinc-700 mt-2 w-[90%] text-center font-medium">
+            <p className="text-zinc-700 mt-2 w-[90%] text-center font-semibold">
                 We offer hosting, branding and maintenance but we specialize in web development. Here are our most popular website packages. Please
                 <a href="#contact" className="underline"> contact us </a>
                 for prcing on other services or websites beyond 5 pages.

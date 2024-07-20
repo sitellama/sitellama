@@ -38,109 +38,54 @@
 }
 
 .slick-slide img {
-    @apply h-auto w-max;
+    @apply w-max;
 }
 
 .slick-track {
     @apply flex;
 }
 
-
-/* raleway-100 - latin */
+/* raleway-regular - latin */
 @font-face {
-    font-display: swap; 
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 100;
-    src: url('@/assets/fonts/raleway-v34-latin-100.woff2') format('woff2'); 
-  }
-  /* raleway-300 - latin */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 300;
-    src: url('@/assets/fonts/raleway-v34-latin-300.woff2') format('woff2'); 
-  }
-  /* raleway-regular - latin */
-  @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: url('@/assets/fonts/raleway-v34-latin-regular.woff2') format('woff2'); 
-  }
-  /* raleway-600 - latin */
-  @font-face {
-    font-display: swap; 
+    src: url('@/assets/fonts/raleway-v34-latin-regular.woff2') format('woff2');
+}
+
+/* raleway-600 - latin */
+@font-face {
+    font-display: swap;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
-    src: url('@/assets/fonts/raleway-v34-latin-600.woff2') format('woff2'); 
-  }
-  /* raleway-900 - latin */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    src: url('@/assets/fonts/raleway-v34-latin-900.woff2') format('woff2'); 
-  }
+    src: url('@/assets/fonts/raleway-v34-latin-600.woff2') format('woff2');
+}
 
-  /* inter-regular - latin */
+/* inter-regular - latin */
 @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('@/assets/fonts/inter-v13-latin-regular.woff2') format('woff2'); 
-  }
-  /* inter-800 - latin */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    src: url('@/assets/fonts/inter-v13-latin-800.woff2') format('woff2'); 
-  }
+    src: url('@/assets/fonts/inter-v13-latin-regular.woff2') format('woff2');
+}
 
-  /* montserrat-regular - latin */
+/* montserrat-regular - latin */
 @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url('@/assets/fonts/montserrat-v26-latin-regular.woff2') format('woff2'); 
-  }
-  /* montserrat-500 - latin */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('@/assets/fonts/montserrat-v26-latin-500.woff2') format('woff2'); 
-  }
-  /* montserrat-600 - latin */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: url('@/assets/fonts/montserrat-v26-latin-600.woff2') format('woff2'); 
-  }
-  /* montserrat-700 - latin */
-  @font-face {
-    font-display: swap; 
+    src: url('@/assets/fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-display: swap;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: url('@/assets/fonts/montserrat-v26-latin-700.woff2') format('woff2'); 
-  }
-  /* montserrat-800 - latin */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    src: url('@/assets/fonts/montserrat-v26-latin-800.woff2') format('woff2'); 
-  }
+    src: url('@/assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+}

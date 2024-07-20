@@ -92,7 +92,7 @@ export default function Carousel() {
                         {data.map((item, index) => (
                             <div className=" text-green-400 rounded-xl" key={index}>
                                 <div className="rounded-t-xl flex justify-center items-center">
-                                    <img className="size-36" src={item.img} alt={item.name} />
+                                    <img src={item.img} alt={item.name} />
                                 </div>
                             </div>
                         ))}
