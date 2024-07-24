@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { Location, Outlet, useLocation } from "react-router-dom";
-import ReactGA from 'react-ga';
+//import ReactGA from 'react-ga';
 import { Header } from "../components/1-header";
 import { Footer } from "../components/3-footer";
 import { classNames } from "@/utils";
 
-ReactGA.initialize('UA-000000-01');
+// ReactGA.initialize('G-XMXJ22G27Y', {
+//     gaAddress: "https://www.googletagmanager.com/gtag/js?id=G-XMXJ22G27Y",
+// });
 
 const debugClasses = import.meta.env.PROD ? "" : "debug-screens";
 
@@ -14,7 +16,7 @@ export function Root() {
 
     useEffect(
         () => {
-            reportGA(loc);
+            // reportGA(loc);
         }, [loc.pathname, loc.search]
     );
 
@@ -28,12 +30,12 @@ export function Root() {
     </>);
 }
 
-function reportGA(loc: Location) {
-    ReactGA.pageview(loc.pathname + loc.search, undefined, "0-root-title");
+// function reportGA(loc: Location) {
+//     ReactGA.pageview(loc.pathname + loc.search, undefined, "0-root-title");
 
-    ReactGA.event({
-        category: 'Page Click',
-        action: 'Clicked on Buy Now',
-        label: 'Product Page',
-    });
-}
+//     ReactGA.event({
+//         category: 'Page Click',
+//         action: 'Clicked on Buy Now',
+//         label: 'Product Page',
+//     });
+// }

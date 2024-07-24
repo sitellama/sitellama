@@ -14,7 +14,7 @@ md:relative \
 
 const imgClasses = `md:object-contain mt-4 md:mt-0 relative md:absolute md:right-0 lg:right-auto md:bottom-[-4rem] md:max-h-[360px]`;
 
-function HeroBanner() {
+export function HeroBanner() {
     // const [isLoaded, setIsLoaded] = useState(false);
     // const [isHovered, setIsHovered] = useState(false);
 
@@ -55,5 +55,3 @@ function HeroBanner() {
         </section>
     );
 }
-
-export default HeroBanner;

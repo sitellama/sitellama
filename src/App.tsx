@@ -19,7 +19,7 @@ function scrollToHashElement() {
         return;
     }
 
-    console.log({ elementToScroll, rect: elementToScroll.getBoundingClientRect(), windowTop: window.scrollY});
+    console.log({ elementToScroll, rect: elementToScroll.getBoundingClientRect(), windowTop: window.scrollY });
     console.log('offsetTop', elementToScroll.offsetTop, 'clientTop', elementToScroll.clientTop);
 
     window.scrollTo({
@@ -30,20 +30,28 @@ function scrollToHashElement() {
 
 export function App() {
 
-    useEffect(() => {
-        setTimeout(() => {
-            scrollToHashElement();
-        }
-        , 1000);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         scrollToHashElement();
+    //     }
+    //     , 1000);
 
-        window.addEventListener("hashchange", scrollToHashElement);
-        return window.removeEventListener("hashchange", scrollToHashElement);
-    }, []);
+    //     window.addEventListener("hashchange", scrollToHashElement);
+    //     return window.removeEventListener("hashchange", scrollToHashElement);
+    // }, []);
 
     return (<>
         <HelmetProvider context={{}}>
-            <RouterProvider router={router} />
+            {/* <RouterProvider router={router} /> */}
             <CookiesPopup />
+            <div className="h-screen flex items-center justify-center">1234</div>
         </HelmetProvider>
     </>);
 }
+
+// export function App() {
+
+//     return (<>
+//     <div className="h-screen flex items-center justify-center">123</div>
+//     </>);
+// }

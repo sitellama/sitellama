@@ -1,20 +1,54 @@
-import { useEffect, useState } from "react";
+import { CSSProperties, useEffect, useState } from "react";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 
+const style: CSSProperties = {
+    fontFamily: "Montserrat, sans-serif",
+    background: "#2B373B",
+    position: "fixed",
+    bottom: 0,
+    left: 0,
+    width: '100%',
+    zIndex: 200,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+};
+
+const rootClasses = "fixed p-4 left-0 bottom-0 w-full z-[200] text-zinc-100 bg-zinc-700 flex flex-col items-end gap-4";
+
 export function CookiesPopup() {
-    const [hasConsentValue, setHasConsentValue] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
 
     useEffect(() => {
-        setHasConsentValue(!!getCookieConsentValue());
-        if (getCookieConsentValue() === 'true') {
-            console.log('User has consented to cookies');
+        const hasCookie = document.cookie?.includes('cookieConsent2=true');
+        if (hasCookie) {
+            return;
         }
+
+        setTimeout(() => setShowPopup(true), 2000);
+
+        // setShowPopup(true);
+
+        // setShowPopup(!getCookieConsentValue());
+
+        // console.log('Cookie consent value:', document.cookie);
+        // console.log('Cookie consent includes:', document.cookie?.includes('cookieConsent2=true'));
+
+        // if (getCookieConsentValue() === 'true') {
+        //     console.log('User has consented to cookies');
+        // }
     }, []);
 
+    function onClick() {
+        document.cookie = 'cookieConsent2=true; max-age=31536000; path=/';
+    }
+
     return (<>
-        {!hasConsentValue && (
-            <div style={{ fontFamily: "Montserrat, sans-serif", background: "#2B373B", position: "fixed", bottom: 0, left: 0, width: '100%', zIndex: 200, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', }}>
-                <CookieConsent
+        {showPopup && (
+            // <div style={style}>
+            <div className={rootClasses}>
+                {/* <CookieConsent
                     location="bottom"
                     buttonText="Accept"
                     cookieName="cookieConsent"
@@ -23,8 +57,16 @@ export function CookiesPopup() {
                     expires={150}
                 >
                     <div>This website uses cookies to enhance the user experience.{" "}</div>
-                    {/* <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span> */}
-                </CookieConsent>
+                    {/* <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span> * /}
+                </CookieConsent> */}
+
+                <div>
+                    This website uses cookies to enhance the user experience.
+                </div>
+
+                <button className="border-2 border-transparent bg-black text-white text-sm px-4 py-2 rounded-md" onClick={onClick}>
+                    Accept
+                </button>
             </div>
         )}
     </>);

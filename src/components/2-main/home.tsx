@@ -1,5 +1,5 @@
 import { SEO } from "../../utils/seo";
-import HeroBanner from "../4-library/herobanner";
+import { HeroBanner } from "../4-library/herobanner";
 import PriceSection from "../4-library/pricing-section";
 import { PortfolioFeatured } from "../4-library/portfolio-featured";
 import { ContactForm } from "../4-library/contact-form";

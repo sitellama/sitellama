@@ -39,7 +39,7 @@ export function PortfolioFeatured(
 
             <div>
                 <h2 className="text-center mb-8 mt-24">Recent Work</h2>
-                <img src={recentWork} alt={recentWorkAlt} className="-mb-12 mx-auto w-full max-w-7xl h-[400px]" />
+                <img src={recentWork} alt={recentWorkAlt} className="-mb-12 mx-auto w-full max-w-7xl max-h-[500px]" />
             </div>
 
 
