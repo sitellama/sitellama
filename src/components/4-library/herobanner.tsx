@@ -33,7 +33,7 @@ export function HeroBanner() {
                         <p className="text-[28px] font-headings md:mb-8">No Prob-llama!</p>
                     </div>
 
-                    <div className="flex justify-center gap-x-4 text-center w-[100%]">
+                    <div className="flex justify-center gap-x-4 text-center w-full">
                         <a className="w-[180px] btn bg-brand-purple text-white mt-0 px-4" href="#services">
                             View Services
                             <ArrowRight className="hidden md:inline-block ml-3 stroke-3 text-white size-4" />
@@ -45,12 +45,12 @@ export function HeroBanner() {
                     </div>
                 </div>
 
-                <div className=" mb-[-10rem] md:mb-[-4] flex flex-col md:w-full justify-end">
+                {/* <div className=" mb-[-10rem] md:mb-[-4] flex flex-col md:w-full justify-end">
                     <picture>
                         <source media="(min-width:768px)" srcSet={mascotLg} />
                         <img src={mascotSm} alt="Sitellama Logo" className={imgClasses} ></img>
                     </picture>
-                </div>
+                </div> */}
             </div>
         </section>
     );

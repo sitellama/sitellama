@@ -19,7 +19,7 @@ export function Home() {
 
             <HeroBanner />
 
-            <Intro />
+            {/* <Intro /> */}
 
             <LlamaTechnology />
 

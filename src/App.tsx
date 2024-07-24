@@ -30,21 +30,21 @@ function scrollToHashElement() {
 
 export function App() {
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         scrollToHashElement();
-    //     }
-    //     , 1000);
+    useEffect(() => {
+        setTimeout(() => {
+            scrollToHashElement();
+        }
+        , 1000);
 
-    //     window.addEventListener("hashchange", scrollToHashElement);
-    //     return window.removeEventListener("hashchange", scrollToHashElement);
-    // }, []);
+        window.addEventListener("hashchange", scrollToHashElement);
+        return window.removeEventListener("hashchange", scrollToHashElement);
+    }, []);
 
     return (<>
         <HelmetProvider context={{}}>
-            {/* <RouterProvider router={router} /> */}
+            <RouterProvider router={router} />
             <CookiesPopup />
-            <div className="h-screen flex items-center justify-center">1234</div>
+            {/* <div className="h-screen flex items-center justify-center">1234</div> */}
         </HelmetProvider>
     </>);
 }
