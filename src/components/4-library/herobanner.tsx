@@ -1,7 +1,6 @@
+import { ArrowRight } from "@/ui";
 import mascotSm from "../../assets/mobile-development-hero-centered.webp";
 import mascotLg from "../../assets/mobile-development-hero.webp";
-
-import { ArrowRight } from "@/ui";
 
 const sectionClasses = "\
 w-full \
@@ -15,9 +14,6 @@ md:relative \
 const imgClasses = `md:object-contain mt-4 md:mt-0 relative md:absolute md:right-0 lg:right-auto md:bottom-[-4rem] md:max-h-[360px]`;
 
 export function HeroBanner() {
-    // const [isLoaded, setIsLoaded] = useState(false);
-    // const [isHovered, setIsHovered] = useState(false);
-
     return (
         <section className={sectionClasses}>
             <div className="flex flex-col md:flex-row w-[85%] max-w-[980px]">
@@ -45,12 +41,12 @@ export function HeroBanner() {
                     </div>
                 </div>
 
-                {/* <div className=" mb-[-10rem] md:mb-[-4] flex flex-col md:w-full justify-end">
+                <div className=" mb-[-10rem] md:mb-[-4] flex flex-col md:w-full justify-end">
                     <picture>
                         <source media="(min-width:768px)" srcSet={mascotLg} />
                         <img src={mascotSm} alt="Sitellama Logo" className={imgClasses} ></img>
                     </picture>
-                </div> */}
+                </div>
             </div>
         </section>
     );
