@@ -7,7 +7,7 @@ import llamaTech1m from '../../../src/assets/llama-tech-1-mobile.webp';
 
 function Growth() {
     return (
-        <section className="w-[90%] m-auto text-xl text-red-500" id='growth'>
+        <section className="w-[90%] m-auto text-xl" id='growth'>
             <h2 className="text-center text-brand-blue dark:text-blue-400 mb-16 mt-4">
                 How <span className="text-brand-teal">Llama Tech</span> Helps <br></br> <span className="md:whitespace-nowrap">Businesses Grow</span>
             </h2>

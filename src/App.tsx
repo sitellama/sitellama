@@ -31,13 +31,17 @@ function scrollToHashElement() {
 export function App() {
 
     useEffect(() => {
-        setTimeout(() => {
-            scrollToHashElement();
-        }
-        , 1000);
+        setTimeout(
+            () => {
+                scrollToHashElement();
+            }, 1000
+        );
 
         window.addEventListener("hashchange", scrollToHashElement);
-        return window.removeEventListener("hashchange", scrollToHashElement);
+
+        return () => {
+            window.removeEventListener("hashchange", scrollToHashElement);
+        };
     }, []);
 
     return (<>

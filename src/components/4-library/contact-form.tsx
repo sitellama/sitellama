@@ -10,17 +10,19 @@ export function ContactForm(props: ContactFormProps) {
     const isFirstTime = useRef(true);
 
     useEffect(() => {
-        if (!isFirstTime.current) {
-            return;
-        }
-        isFirstTime.current = false;
+        setTimeout(() => {
+            if (!isFirstTime.current) {
+                return;
+            }
+            isFirstTime.current = false;
 
-        const resizer = (window as any).iFrameResize;
+            const resizer = (window as any).iFrameResize;
 
-        resizer?.({
-            checkOrigin: false,
-            heightCalculationMethod: "taggedElement"
-        });
+            resizer?.({
+                checkOrigin: false,
+                heightCalculationMethod: "taggedElement"
+            });
+        }, 1000);
     }, []);
 
     return (

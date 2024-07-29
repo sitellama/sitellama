@@ -9,8 +9,9 @@ import s6Horses from "../../assets/portfolio1.webp";
 import kcrafts from "../../assets/portfolio2.webp";
 import Growth from "../4-library/growth";
 import Intro from "../4-library/intro";
-import LlamaTechnology from "../4-library/llama-technology";
+import {LlamaTechnology} from "../4-library/llama-technology";
 import Carousel from "../4-library/carousel";
+import { LazyAnimation } from "@/ui/lazy-animation";
 
 export function Home() {
     return (
@@ -19,11 +20,13 @@ export function Home() {
 
             <HeroBanner />
 
-            {/* <Intro /> */}
+            <Intro />
 
             <LlamaTechnology />
 
-            <Growth />
+            {/* <LazyAnimation> */}
+                <Growth />
+            {/* </LazyAnimation> */}
 
             <PortfolioFeatured
                 recentWork={recentWork}
