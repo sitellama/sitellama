@@ -82,7 +82,7 @@ export function MainMenu() {
     );
 }
 
-const c2Classes = "\
+const liClasses = "\
 block \
 px-3 \
 py-2 \
@@ -114,7 +114,7 @@ function OurLink({ label, to, loc }: { label: string; to: string; loc: Location;
 
             <a
                 href={to}
-                className={classNames(c2Classes, isActive && "text-white")}
+                className={classNames(liClasses, isActive && "text-white")}
                 target="_blank"
                 aria-current={isActive ? "page" : undefined}
                 onClick={(e) => {
