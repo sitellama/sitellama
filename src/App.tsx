@@ -29,7 +29,6 @@ function scrollToHashElement() {
 }
 
 export function App() {
-
     useEffect(() => {
         setTimeout(
             () => {
@@ -48,7 +47,6 @@ export function App() {
         <HelmetProvider context={{}}>
             <RouterProvider router={router} />
             <CookiesPopup />
-            {/* <div className="h-screen flex items-center justify-center">1234</div> */}
         </HelmetProvider>
     </>);
 }
