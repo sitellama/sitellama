@@ -24,7 +24,7 @@ function Intro() {
                     </div>
 
                     <div
-                        className={"p-8 bg-brand-blue rounded-l-3xl bg-contain bg-no-repeat bg-right bg-intro-left bg-this-image"}
+                        className={"p-8 bg-brand-blue rounded-l-3xl bg-no-repeat bg-cover md:bg-contain md:bg-right bg-intro-left bg-this-image"}
                         style={{ "--this-image": `url(${hexGridImg})` }}
                     >
                     {/* <div
