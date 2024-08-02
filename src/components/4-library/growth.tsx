@@ -20,7 +20,7 @@ function Growth() {
                 <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">ENGAGE CLIENTS</p>
             </div>
 
-            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 pb-8 md:p-10 rounded-3xl max-w-[1000px] mx-auto mt-16 md:mt-32">
+            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 pb-8 md:p-10 rounded-3xl max-w-[1000px] mx-auto mt-16 md:mt-32 text-white">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-4 md:mt-[-6rem]">
                     <div className="mr-[-10rem] font-bold uppercase">
                         <div>small business</div>
@@ -48,15 +48,15 @@ function Growth() {
 
                 <div className="text-center md:text-left mt-16">
                     <h4 className="text-xl font-bold mb-2 uppercase">Picking the right team</h4>
-                    <p className="text-white mb-4">Your developement team should optimize your site for user experience and performance by using web best practices - and that's exactly what we do best!  </p>
-                    <p className="text-white mb-4">
+                    <p className="mb-4">Your developement team should optimize your site for user experience and performance by using web best practices - and that's exactly what we do best!  </p>
+                    <p className="mb-4">
                         Our team members approach your site with the know-how gained from years working with enterprise level companies such as <span className="text-brand-purple font-bold">Disney</span>, <span className="text-brand-purple font-bold ">Target</span>, <span className="text-brand-purple font-bold">Facebook</span> and <span className="text-brand-purple font-bold">more</span>.
                     </p>
-                    <p className="text-white mb-4">
+                    <p className="mb-4">
                         We work with you to determine your business goals, timeline and budget. Leave the techy stuff to the llama herd, we've got you covered!
                     </p>
                     <div className='flex justify-center md:justify-start'>
-                        <a href='#contact' className="flex justify-center items-center leading-light bg-brand-purple btn text-white w-fit px-4">
+                        <a href='#contact' className="flex justify-center items-center leading-light bg-brand-purple btn w-fit px-4">
                             Let's Start Today
                             <ArrowRight className="inline-block ml-3 stroke-3 text-brand-white size-4" />
                         </a>
