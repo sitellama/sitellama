@@ -1,24 +1,9 @@
-import { useRef, useState } from "react";
-import { Location, useLocation } from "react-router-dom";
+import { HTMLAttributes, useCallback, useRef, useState } from "react";
+import { Link, Location, useLocation } from "react-router-dom";
 import { useClickAway } from "react-use";
 import { classNames } from "@/utils";
 import { IconCross, IconHamburger } from "@/ui";
 import { createPortal } from "react-dom";
-
-const linkClasses = "\
-px-2 py-3 text-sm \
-\
-text-slate-900 \
-bg-slate-300 \
-hover:bg-sky-500 hover:text-white \
-";
-
-const linkActiveClasses = "!bg-white-700";
-
-const itemClasses = (path: string, loc: Location): string => {
-    const isActive = path === loc.pathname;
-    return classNames(linkClasses, isActive && linkActiveClasses);
-};
 
 const menuRowClasses = "\
 py-8 \
@@ -42,29 +27,39 @@ export function MainMenu() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const ref = useRef(null);
+    const buttonRef = useRef<HTMLButtonElement>(null);
 
-    useClickAway(ref,
-        () => {
-            closeMenu();
-        }
+    useClickAway<MouseEvent | TouchEvent>(ref,
+        useCallback((event) => {
+            if (!buttonRef.current) {
+                return;
+            }
+
+            const target = event.target as HTMLElement;
+            const isChild = buttonRef.current.contains(target);
+
+            if (!isChild) {
+                setIsMenuOpen(false);
+            }
+        }, [buttonRef])
     );
 
-    function closeMenu() {
-        setIsMenuOpen(false);
-    }
+    const closeMenu = useCallback(
+        function closeMenu() {
+            setIsMenuOpen(false);
+        }, []
+    );
 
     return (
         <div className="z-50">
-            <MenuBody className={menuRowClasses} closeMenu={closeMenu} loc={loc} />
+            <MenuBody className={menuRowClasses} loc={loc} closeMenu={closeMenu} />
 
             <div className="relative">
                 <div>
                     <button
+                        ref={buttonRef}
                         className="sm:hidden"
-                        onClick={(event) => {
-                            event.stopPropagation();
-                            setIsMenuOpen((v) => !v);
-                        }}
+                        onClick={() => setIsMenuOpen(v => !v)}
                         role="navigation"
                         aria-label="Main Menu"
                         type="button"
@@ -78,7 +73,7 @@ export function MainMenu() {
                     {isMenuOpen &&
                         createPortal(
                             <div ref={ref} className="w-full absolute right-0 top-0 flex justify-end">
-                                <MenuBody className={menuColClasses} closeMenu={closeMenu} loc={loc} />
+                                <MenuBody className={menuColClasses} loc={loc} closeMenu={closeMenu} />
                             </div>, document.body
                         )
                     }
@@ -110,11 +105,34 @@ hover:underline \
 select-none \
 ";
 
-function OurLink({ label, to, loc }: { label: string; to: string; loc: Location; }) {
+const linkClasses = "\
+px-2 py-3 text-sm \
+\
+text-slate-900 \
+bg-slate-300 \
+hover:bg-sky-500 hover:text-white \
+";
+
+const linkActiveClasses = "!bg-white-700";
+
+const itemClasses = (path: string, loc: Location): string => {
+    const isActive = path === loc.pathname;
+    return classNames(linkClasses, isActive && linkActiveClasses);
+};
+
+function OurLink({ closeMenu, label, to, loc }: { closeMenu: () => void; label: string; to: string; loc: Location; }) {
     const isActive = to === loc.pathname;
     return (
         <li>
-            {/* <Link to={to} className={itemClasses(to, loc)} aria-current={isActive ? "page" : undefined}>
+            {/* <Link
+                to={to}
+                // className={itemClasses(to, loc)}
+                className={classNames(liClasses, isActive && "text-white")}
+                aria-current={isActive ? "page" : undefined}
+                onClick={() => {
+                    closeMenu();
+                }}
+            >
                 {label}
             </Link> */}
 
@@ -123,10 +141,9 @@ function OurLink({ label, to, loc }: { label: string; to: string; loc: Location;
                 className={classNames(liClasses, isActive && "text-white")}
                 target="_blank"
                 aria-current={isActive ? "page" : undefined}
-                onClick={(e) => {
-                    e.preventDefault();
-                    console.log("clicked");
-
+                onClick={(event) => {
+                    event.preventDefault();
+                    closeMenu();
                     window.location.href = to;
                 }
                 }
@@ -137,14 +154,14 @@ function OurLink({ label, to, loc }: { label: string; to: string; loc: Location;
     );
 }
 
-function MenuBody({ closeMenu, loc, className }: { closeMenu: () => void; loc: Location; className?: string; }) {
+function MenuBody({ loc, closeMenu, ...rest }: { loc: Location; closeMenu: () => void; } & HTMLAttributes<HTMLUListElement>) {
     return (
-        <ul className={className}>
+        <ul {...rest}>
             {/* <OurLink label="Home" to="/" loc={loc} /> */}
-            <OurLink label="Services" to="#services" loc={loc} />
-            <OurLink label="Portfolio" to="#portfolio" loc={loc} />
-            <OurLink label="Pricing" to="#pricing" loc={loc} />
-            <OurLink label="Contact" to="#contact" loc={loc} />
+            <OurLink label="Services" to="#services" loc={loc} closeMenu={closeMenu} />
+            <OurLink label="Portfolio" to="#portfolio" loc={loc} closeMenu={closeMenu} />
+            <OurLink label="Pricing" to="#pricing" loc={loc} closeMenu={closeMenu} />
+            <OurLink label="Contact" to="#contact" loc={loc} closeMenu={closeMenu} />
         </ul>
     );
 }
