@@ -43,9 +43,11 @@ export function MainMenu() {
 
     const ref = useRef(null);
 
-    useClickAway(ref, () => {
-        closeMenu();
-    });
+    useClickAway(ref,
+        () => {
+            closeMenu();
+        }
+    );
 
     function closeMenu() {
         setIsMenuOpen(false);
@@ -59,12 +61,16 @@ export function MainMenu() {
                 <div>
                     <button
                         className="sm:hidden"
-                        onClick={() => setIsMenuOpen((v) => !v)}
+                        onClick={(event) => {
+                            event.stopPropagation();
+                            setIsMenuOpen((v) => !v);
+                        }}
                         role="navigation"
-                        aria-label="Main Menu" // aria-state={isMenuOpen ? "open" : "closed"}
+                        aria-label="Main Menu"
+                        type="button"
                     >
                         {isMenuOpen
-                            ? <IconCross className="size-7 fill-black"/>
+                            ? <IconCross className="size-7 fill-black" />
                             : <IconHamburger className="size-7 fill-white" />
                         }
                     </button>
