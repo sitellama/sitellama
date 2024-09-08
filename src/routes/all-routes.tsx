@@ -4,7 +4,7 @@ import { Root } from "./root";
 // import { About } from "@/components/2-main/about/about";
 import { Contact } from "../components/2-main/contact";
 import { Home } from "../components/2-main/home";
-import { Pricing } from "@/components/2-main";
+import { Blogs, Pricing } from "@/components/2-main";
 import { Portfolio } from "@/components/2-main/portfolio";
 
 const routes: RouteObject[] = [
@@ -23,6 +23,10 @@ const routes: RouteObject[] = [
     {
         path: "/pricing",
         element: <Pricing />,
+    },
+    {
+        path: "/blogs",
+        element: <Blogs />,
     },
     {
         path: "/contact",
