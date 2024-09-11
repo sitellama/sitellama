@@ -20,7 +20,7 @@ function Growth() {
                 <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">ENGAGE CLIENTS</p>
             </div>
 
-            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 pb-8 md:p-10 rounded-3xl max-w-[1000px] mx-auto mt-16 md:mt-32 text-white">
+            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 pb-8 md:p-10 rounded-3xl max-w-5xl mx-auto mt-16 md:mt-32 text-white">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-4 md:mt-[-6rem]">
                     <div className="mr-[-10rem] font-bold uppercase">
                         <div>small business</div>

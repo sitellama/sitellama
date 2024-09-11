@@ -25,7 +25,7 @@ hover:text-white";
 
 function Body() {
     return (
-        <div className="max-w-[1000px] mx-auto w-[90%] md:w-full mt-8 mb-8">
+        <div className="max-w-5xl mx-auto w-[90%] md:w-full mt-8 mb-8">
             <div className="text-center">
                 <h2 className="text-brand-teal mb-8">Llama Technology</h2>
                 <p className="text-zinc-700 mt-2 font-semibold">Not sure what you need? Send us a message and we'll help you figure it out!</p>

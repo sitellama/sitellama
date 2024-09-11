@@ -18,7 +18,7 @@ function Intro() {
 
             {/* row 1 */}
             <div className='flex justify-end'>
-                <div className="w-[90%] 3xl:w-full flex 2xl:justify-end gap-8">
+                <div className="w-[95%] 3xl:w-full flex 2xl:justify-end gap-8">
                     <div className="bg-brand-blue p-10 rounded-3xl hidden md:flex items-center justify-center">
                         <img src={techIcon1} alt="" className="max-w-[150px]" />
                     </div>
@@ -30,7 +30,7 @@ function Intro() {
                     {/* <div
                         className={"p-8 bg-brand-blue rounded-l-3xl "}
                     > */}
-                        <div className="lg:max-w-[90%]">
+                        <div className="lg:max-w-[95%]">
                             <h2 className="text-white text-3xl">Time To Stand Out From The Herd</h2>
                             <div className="lg:max-w-[75%]">
                                 <p className="text-white">We make small businesses look good. Sure, you could grab a template and sprinkle in some keywords, but what about site speed? Mobile-friendly design? SEO? Sitellama takes care of the details so you can focus on what you do best - running your business!</p>
@@ -42,7 +42,7 @@ function Intro() {
 
             {/* row 2 */}
             <div className="flex mt-16 justify-start">
-                <div className="flex w-[90%]">
+                <div className="flex w-[95%]">
                     <div className="!bg-brand-blue !bg-contain !bg-no-repeat p-8 rounded-r-3xl flex justify-end" style={{ background: bgRight }}>
                     {/* <div className="!bg-brand-blue  p-8 rounded-r-3xl flex justify-end" > */}
                         <div className="lg:max-w-[75%]">
