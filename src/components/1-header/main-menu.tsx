@@ -136,10 +136,9 @@ function OurLink({ closeMenu, label, to, loc }: { closeMenu: () => void; label: 
                 {label}
             </Link> */}
 
-            <a
-                href={to}
+            <Link
+                to={to}
                 className={classNames(liClasses, isActive && "text-white")}
-                target="_blank"
                 aria-current={isActive ? "page" : undefined}
                 onClick={(event) => {
                     event.preventDefault();
@@ -149,7 +148,7 @@ function OurLink({ closeMenu, label, to, loc }: { closeMenu: () => void; label: 
                 }
             >
                 {label}
-            </a>
+            </Link>
         </li>
     );
 }
