@@ -160,7 +160,7 @@ function MenuBody({ loc, closeMenu, ...rest }: { loc: Location; closeMenu: () =>
             <OurLink label="Services" to="#services" loc={loc} closeMenu={closeMenu} />
             <OurLink label="Portfolio" to="#portfolio" loc={loc} closeMenu={closeMenu} />
             <OurLink label="Pricing" to="#pricing" loc={loc} closeMenu={closeMenu} />
-            <OurLink label="Blogs" to="/blogs" loc={loc} closeMenu={closeMenu} />
+            {/* <OurLink label="Blogs" to="/blogs" loc={loc} closeMenu={closeMenu} /> */}
             <OurLink label="Contact" to="#contact" loc={loc} closeMenu={closeMenu} />
         </ul>
     );

@@ -24,10 +24,10 @@ const routes: RouteObject[] = [
         path: "/pricing",
         element: <Pricing />,
     },
-    {
-        path: "/blogs",
-        element: <Blogs />,
-    },
+    // {
+    //     path: "/blogs",
+    //     element: <Blogs />,
+    // },
     {
         path: "/contact",
         element: <Contact />,

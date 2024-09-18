@@ -53,10 +53,10 @@ function PricingSection() {
                 for prcing on other services or websites beyond 5 pages.
             </p>
 
-            <div className="w-full bg-brand-blue flex flex-col md:flex-row items-center justify-center">
-                <div className="md:max-w-5xl w-full">
+            <div className="w-full pt-4 md:pt-16 pb-4 bg-brand-blue">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                     {/* Basic Card */}
-                    {/* <div className={cardClasses}>
+                    <div className={cardClasses}>
                         <PriceTag label="Standard" pages="1 Page" bgColor="bg-brand-green" price="starting at $600" />
                         <div className="text-2xl bg-white rounded-3xl p-8">
                             <ListItem label="Domain migration" />
@@ -68,9 +68,9 @@ function PricingSection() {
                             <ListItem label="1 Set of Revisions" />
                             <ListItem label="Launch Day Support" />
                         </div>
-                    </div> */}
+                    </div>
                     {/* Startup Card */}
-                    {/* <div className={cardClasses}>
+                    <div className={cardClasses}>
                         <PriceTag label="Premium" pages="2-5 Pages" bgColor="bg-brand-purple" price="starting at $3500" />
                         <div className="text-2xl bg-white rounded-3xl p-8">
                             <ListItem label="BASIC package plus..." />
@@ -82,10 +82,10 @@ function PricingSection() {
                             <ListItem label="3 Design Revisions" />
                             <ListItem label="1 Week Follow Up" />
                         </div>
-                    </div> */}
+                    </div>
 
                     {/* <Accordion type="single" collapsible className="w-half"> */}
-                    <Accordion type="single" collapsible className="w-half bg-brand-green">
+                    {/* <Accordion type="single" collapsible className="w-half bg-green-500">
                         <AccordionItem value="item-1">
                             <AccordionTrigger>
                                 <AccordionTop label="Standard" pages="1 Page" price="starting at $600" />
@@ -116,7 +116,7 @@ function PricingSection() {
                                 prefer.
                             </AccordionContent>
                         </AccordionItem>
-                    </Accordion>
+                    </Accordion> */}
                 </div>
             </div>
 
