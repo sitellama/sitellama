@@ -8,6 +8,7 @@ import tornjakTwo from '../../../src/assets/mockup-tornjak2.webp';
 import kcrafts from '../../../src/assets/mockup-kcrafts.webp';
 import dynamic from '../../../src/assets/mockup-dynamic-equine.webp';
 import dndivination from '../../../src/assets/mockup-dndivination.webp';
+import blueShamrock from '../../../src/assets/mockup-blue-shamrock.webp';
 import { ArrowLeft } from "@/ui/icons/arrow-left";
 import { ArrowRight } from "@/ui/icons/arrow-right";
 
@@ -31,6 +32,10 @@ export default function Carousel() {
         {
             name: "Custom website designed and built by Sitellama for Tornjak Club of North America",
             img: tornjak,
+        },
+        {
+            name: "Custom website designed and built by Sitellama for Blue Shamrock Farm",
+            img: blueShamrock,
         },
         {
             name: "Custom website designed and built by Sitellama for Kcrafts",

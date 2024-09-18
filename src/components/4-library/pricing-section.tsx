@@ -37,7 +37,7 @@ function AccordionTop({ label, pages, price }: { label: string; pages: string; p
     );
 }
 
-const cardClasses = "flex-1 lg:max-w-96 bg-white rounded-3xl md:hover:scale-105 transition-transform shadow-xl";
+const cardClasses = "flex-1 md:max-w-96 bg-white rounded-3xl md:hover:scale-105 transition-transform shadow-xl";
 
 
 function PricingSection() {
@@ -54,7 +54,7 @@ function PricingSection() {
             </p>
 
             <div className="w-full bg-brand-blue flex flex-col md:flex-row items-center justify-center">
-                <div className="lg:max-w-5xl">
+                <div className="md:max-w-5xl w-full">
                     {/* Basic Card */}
                     {/* <div className={cardClasses}>
                         <PriceTag label="Standard" pages="1 Page" bgColor="bg-brand-green" price="starting at $600" />
@@ -85,21 +85,21 @@ function PricingSection() {
                     </div> */}
 
                     {/* <Accordion type="single" collapsible className="w-half"> */}
-                    <Accordion type="single" collapsible className="w-half bg-green-500">
+                    <Accordion type="single" collapsible className="w-half bg-brand-green">
                         <AccordionItem value="item-1">
                             <AccordionTrigger>
                                 <AccordionTop label="Standard" pages="1 Page" price="starting at $600" />
                             </AccordionTrigger>
 
                             <AccordionContent className="text-2xl bg-white rounded-3xl p-8">
-                                    <ListItem label="Domain migration" />
-                                    <ListItem label="Social Media Integration" />
-                                    <ListItem label="Mobile Friendly Design" />
-                                    <ListItem label="GDPR/CCPA Compliance" />
-                                    <ListItem label="WCAG level A Compliance" />
-                                    <ListItem label="Basic SEO" />
-                                    <ListItem label="1 Set of Revisions" />
-                                    <ListItem label="Launch Day Support" />
+                                <ListItem label="Domain migration" />
+                                <ListItem label="Social Media Integration" />
+                                <ListItem label="Mobile Friendly Design" />
+                                <ListItem label="GDPR/CCPA Compliance" />
+                                <ListItem label="WCAG level A Compliance" />
+                                <ListItem label="Basic SEO" />
+                                <ListItem label="1 Set of Revisions" />
+                                <ListItem label="Launch Day Support" />
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
