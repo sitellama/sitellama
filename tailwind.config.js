@@ -20,6 +20,7 @@ export default {
             colors: {
                 'brand-blue': '#0077C2',
                 'brand-purple': '#9D3BAD',
+                'brand-purple-light': '#AD5BBA',
                 'brand-green': '#6ABD86',
                 'brand-green-light': '#AFE9AF',
                 'brand-orange': '#FD9D3F',
