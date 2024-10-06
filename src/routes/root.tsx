@@ -5,7 +5,7 @@ import { Header } from "../components/1-header";
 import { Footer } from "../components/3-footer";
 import { classNames } from "@/utils";
 
-ReactGA.initialize('G-XMXJ22G27Y');
+// ReactGA.initialize('G-XMXJ22G27Y');
 
 const debugClasses = import.meta.env.PROD ? "" : "debug-screens";
 

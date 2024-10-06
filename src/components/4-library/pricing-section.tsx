@@ -19,7 +19,7 @@ function ListItem({ label, ok = true }: { label: string; ok?: boolean; }) {
 function PriceTag({ label, pages, bgColor, price }: { label: string; pages: string; bgColor: string; price: string; }) {
     return (
         <div className={`text-center ${bgColor} rounded-3xl py-12`}>
-            <h3 className="text-4xl font-semibold uppercase text-white">{label}</h3>
+            <h3 className="text-2xl font-semibold capitalize text-white">{label}</h3>
             <p className="text-2xl text-zinc-100">{price}</p>
             <p className="text-2xl text-zinc-100 font-semibold pt-8 pb-4">{pages}</p>
         </div>
@@ -30,7 +30,7 @@ function PriceTag({ label, pages, bgColor, price }: { label: string; pages: stri
 function AccordionTop({ label, pages, price }: { label: string; pages: string; price: string; }) {
     return (
         <div className="w-full flex flex-col justify-center">
-            <h3 className="text-4xl font-semibold uppercase text-white">{label}</h3>
+            <h3 className="text-2xl font-semibold capitalize text-white">{label}</h3>
             <p className="text-2xl text-zinc-100">{price}</p>
             <p className="text-2xl text-zinc-100 font-semibold">{pages}</p>
         </div>
@@ -53,42 +53,12 @@ function PricingSection() {
                 for prcing on other services or websites beyond 5 pages.
             </p>
 
-            <div className="w-full pt-4 md:pt-16 pb-4 bg-brand-blue">
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                    {/* Basic Card */}
-                    <div className={cardClasses}>
-                        <PriceTag label="Standard" pages="1 Page" bgColor="bg-brand-green" price="starting at $600" />
-                        <div className="text-2xl bg-white rounded-3xl p-8">
-                            <ListItem label="Domain migration" />
-                            <ListItem label="Social Media Integration" />
-                            <ListItem label="Mobile Friendly Design" />
-                            <ListItem label="GDPR/CCPA Compliance" />
-                            <ListItem label="WCAG level A Compliance" />
-                            <ListItem label="Basic SEO" />
-                            <ListItem label="1 Set of Revisions" />
-                            <ListItem label="Launch Day Support" />
-                        </div>
-                    </div>
-                    {/* Startup Card */}
-                    <div className={cardClasses}>
-                        <PriceTag label="Premium" pages="2-5 Pages" bgColor="bg-brand-purple" price="starting at $3500" />
-                        <div className="text-2xl bg-white rounded-3xl p-8">
-                            <ListItem label="BASIC package plus..." />
-                            <ListItem label="Google Analytics" />
-                            <ListItem label="Custom Website Strategy" />
-                            <ListItem label="Interactive Elements" />
-                            <ListItem label="1 Contact Form" />
-                            <ListItem label="Personalized SEO" />
-                            <ListItem label="3 Design Revisions" />
-                            <ListItem label="1 Week Follow Up" />
-                        </div>
-                    </div>
-
-                    {/* <Accordion type="single" collapsible className="w-half"> */}
-                    {/* <Accordion type="single" collapsible className="w-half bg-green-500">
-                        <AccordionItem value="item-1">
-                            <AccordionTrigger>
-                                <AccordionTop label="Standard" pages="1 Page" price="starting at $600" />
+            <div className="w-full mx-4 pt-6 md:pt-16 pb-4">
+                {/* <div className="flex flex-col md:flex-row items-center justify-center"> */}
+                    <Accordion type="multiple" collapsible className="flex flex-col items-center justify-center gap-6 w-full max-w-[90%] m-auto">
+                        <AccordionItem value="item-1" className="w-full m-auto bg-white rounded-3xl">
+                            <AccordionTrigger className="bg-brand-green rounded-3xl">
+                                <AccordionTop label="Always included" pages="" price="" />
                             </AccordionTrigger>
 
                             <AccordionContent className="text-2xl bg-white rounded-3xl p-8">
@@ -102,25 +72,59 @@ function PricingSection() {
                                 <ListItem label="Launch Day Support" />
                             </AccordionContent>
                         </AccordionItem>
-                        <AccordionItem value="item-2">
-                            <AccordionTrigger>Is it styled?</AccordionTrigger>
-                            <AccordionContent>
-                                Yes. It comes with default styles that matches the other
-                                components&apos; aesthetic.
+
+                        <AccordionItem value="item-2" className="w-full m-auto bg-white rounded-3xl">
+                            <AccordionTrigger className="bg-brand-blue rounded-3xl">
+                                <AccordionTop label="Landing Pages" pages="" price="" />
+                            </AccordionTrigger>
+
+                            <AccordionContent className="text-2xl bg-white rounded-3xl p-8">
+                                <ListItem label="Domain migration" />
+                                <ListItem label="Social Media Integration" />
+                                <ListItem label="Mobile Friendly Design" />
+                                <ListItem label="GDPR/CCPA Compliance" />
+                                <ListItem label="WCAG level A Compliance" />
+                                <ListItem label="Basic SEO" />
+                                <ListItem label="1 Set of Revisions" />
+                                <ListItem label="Launch Day Support" />
                             </AccordionContent>
                         </AccordionItem>
-                        <AccordionItem value="item-3">
-                            <AccordionTrigger>Is it animated?</AccordionTrigger>
-                            <AccordionContent>
-                                Yes. It&apos;s animated by default, but you can disable it if you
-                                prefer.
+
+                        <AccordionItem value="item-3" className="w-full m-auto bg-white rounded-3xl">
+                            <AccordionTrigger className="bg-brand-orange rounded-3xl">
+                                <AccordionTop label="Premium Websites" pages="" price="" />
+                            </AccordionTrigger>
+
+                            <AccordionContent className="text-2xl bg-white rounded-3xl p-8">
+                                <ListItem label="Domain migration" />
+                                <ListItem label="Social Media Integration" />
+                                <ListItem label="Mobile Friendly Design" />
+                                <ListItem label="GDPR/CCPA Compliance" />
+                                <ListItem label="WCAG level A Compliance" />
+                                <ListItem label="Basic SEO" />
+                                <ListItem label="1 Set of Revisions" />
+                                <ListItem label="Launch Day Support" />
                             </AccordionContent>
                         </AccordionItem>
-                    </Accordion> */}
-                </div>
+
+                        <AccordionItem value="item-4" className="w-full m-auto bg-white rounded-3xl">
+                            <AccordionTrigger className="bg-brand-purple rounded-3xl">
+                                <AccordionTop label="Hosting & features" pages="" price="" />
+                            </AccordionTrigger>
+
+                            <AccordionContent className="text-2xl bg-white rounded-3xl p-8">
+                                <ListItem label="Domain migration" />
+                                <ListItem label="Social Media Integration" />
+                                <ListItem label="Mobile Friendly Design" />
+                                <ListItem label="GDPR/CCPA Compliance" />
+                                <ListItem label="WCAG level A Compliance" />
+                                <ListItem label="Basic SEO" />
+                                <ListItem label="1 Set of Revisions" />
+                                <ListItem label="Launch Day Support" />
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
             </div>
-
-
         </section>
     );
 }

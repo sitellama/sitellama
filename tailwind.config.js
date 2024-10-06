@@ -22,6 +22,7 @@ export default {
                 'brand-purple': '#9D3BAD',
                 'brand-green': '#6ABD86',
                 'brand-green-light': '#AFE9AF',
+                'brand-orange': '#FD9D3F',
                 'brand-teal': '#33afbc',
                 'grad-hero-top': '#004aad',
                 'grad-hero-bottom': '#5de0e6',

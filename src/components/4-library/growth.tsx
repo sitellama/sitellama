@@ -20,7 +20,7 @@ function Growth() {
                 <p className="bg-brand-green-light text-zinc-600 font-semibold py-4 px-6 rounded-full w-[65%] text-center md:max-w-fit">ENGAGE CLIENTS</p>
             </div>
 
-            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 pb-8 md:p-10 rounded-3xl max-w-5xl mx-auto mt-16 md:mt-32 text-white">
+            <div className="bg-gradient-to-tl shadow-lg from-brand-green to-brand-green-light p-4 md:p-10 rounded-3xl max-w-5xl mx-auto mt-16 md:mt-32 text-white">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-4 md:mt-[-6rem]">
                     <div className="mr-[-10rem] font-bold uppercase">
                         <div>small business</div>
@@ -45,8 +45,7 @@ function Growth() {
 
                 <img className="w-5/6 md:w-3/6 mx-auto -mt-[2rem]" src={viewMoreWork} alt="sample of responsive web design work on a tablet and phone"></img>
 
-
-                <div className="text-center md:text-left mt-16">
+                <div className="text-center md:text-left mt-16 mb-4">
                     <h4 className="text-xl font-bold mb-2 uppercase">Picking the right team</h4>
                     <p className="mb-4">Your developement team should optimize your site for user experience and performance by using web best practices - and that's exactly what we do best!  </p>
                     <p className="mb-4">
