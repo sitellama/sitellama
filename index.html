@@ -25,8 +25,8 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="./src/assets/img/og-img.jpg" />
 
-        <link rel="preload" fetchpriority="high" as="image" href="./src/assets/mobile-development-hero-centered.webp" type="image/webp">
-        <link rel="preload" fetchpriority="high" as="image" href="./src/assets/intro-hex-grid.webp" type="image/webp">
+        <link rel="preload" fetchpriority="high" as="image" href="./src/assets/mobile-development-hero-centered.webp" type="image/webp" />
+        <link rel="preload" fetchpriority="high" as="image" href="./src/assets/intro-hex-grid.webp" type="image/webp" />
         <link rel="icon" type="image/svg+xml" href="./src/assets/fav_llama.png" />
 
         <!-- Google tag (gtag.js) -->
@@ -54,7 +54,9 @@
                 var id = "spdt-capture",
                     n = "script";
                 if (!d.getElementById(id)) {
-                    w.spdt = w.spdt || function () {
+                    w.spdt =
+                        w.spdt ||
+                        function () {
                             (w.spdt.q = w.spdt.q || []).push(arguments);
                         };
                     var e = d.createElement(n);
@@ -68,6 +70,5 @@
                 w.spdt("view");
             })(window, document);
         </script>
-
     </body>
 </html>
