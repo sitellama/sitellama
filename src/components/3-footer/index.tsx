@@ -13,6 +13,7 @@ function Copyright() {
                     target="_blank">
                     Site by Sitellama LLC {new Date().getFullYear()}©
                 </a>
+                <p className="p-2 text-xs"><a href="/privacy-policy" className="p-2">Privacy Policy</a> | <a href="#" className="p-2">Sitemap</a></p>
             </p>
         </div>
     );

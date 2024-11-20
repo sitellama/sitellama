@@ -7,6 +7,7 @@ import mascot from "../../assets/llama_mascot-form.webp";
 import recentWork from "../../assets/recent-work.webp";
 import s6Horses from "../../assets/portfolio1.webp";
 import kcrafts from "../../assets/portfolio2.webp";
+import bsf from "../../assets/portfolio3.webp";
 import Growth from "../4-library/growth";
 import Intro from "../4-library/intro";
 import { LlamaTechnology } from "../4-library/llama-technology";
@@ -24,7 +25,7 @@ export function Home() {
             <LlamaTechnology />
 
             {/* <LazyAnimation> */}
-                <Growth />
+            <Growth />
             {/* </LazyAnimation> */}
 
             <PortfolioFeatured
@@ -38,11 +39,18 @@ export function Home() {
                 projectOneDesc="S6 Ranch combines elite horse training with the warmth of a family ranch. The owners wanted an elegant website that showscased their love for the community, and that's exactly what we delivered."
                 projectOneDescSR="for S6 Ranch"
 
-                projectTwoImgSrc={kcrafts}
+                // projectTwoImgSrc={kcrafts}
+                // projectTwoImgAlt="screenshots from Kcrafts website, designed and built by Sitellama"
+                // projectTwoName="Kcrafts"
+                // projectTwoQuickFacts="Wordpress &#x2022; Branding &#x2022; E-commerce &#x2022; Blog"
+                // projectTwoDesc="Kcrafts handmakes beautiful crystal jewelry. The owner was looking for a branded, sales-driven website. We dove deep into SEO and marketing strategy to deliver a complete branding suite and a top-notch e-commerce site."
+                // projectTwoDescSR="for Kcrafts"
+
+                projectTwoImgSrc={bsf}
                 projectTwoImgAlt="screenshots from Kcrafts website, designed and built by Sitellama"
-                projectTwoName="Kcrafts"
-                projectTwoQuickFacts="Wordpress &#x2022; Branding &#x2022; E-commerce &#x2022; Blog"
-                projectTwoDesc="Kcrafts handmakes beautiful crystal jewelry. The owner was looking for a branded, sales-driven website. We dove deep into SEO and marketing strategy to deliver a complete branding suite and a top-notch e-commerce site."
+                projectTwoName="Blue Shamrock Farm"
+                projectTwoQuickFacts="Website Design &#x2022; Custom Development &#x2022; Search & Filter"
+                projectTwoDesc="Blue Shamrock Farm is a fast growing hobby farm that was struggling to highlight their many different services. By focusing on user experience (UX) design strategies we were able to provide a beautifully cohesive, easy to navigate website."
                 projectTwoDescSR="for Kcrafts"
             />
 

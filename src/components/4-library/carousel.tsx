@@ -3,12 +3,20 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css';
-import tornjak from '../../../src/assets/mockup-tornjak.webp';
-import tornjakTwo from '../../../src/assets/mockup-tornjak2.webp';
-import kcrafts from '../../../src/assets/mockup-kcrafts.webp';
-import dynamic from '../../../src/assets/mockup-dynamic-equine.webp';
-import dndivination from '../../../src/assets/mockup-dndivination.webp';
-import blueShamrock from '../../../src/assets/mockup-blue-shamrock.webp';
+// import tornjak from '../../../src/assets/mockup-tornjak.webp';
+// import tornjakTwo from '../../../src/assets/mockup-tornjak2.webp';
+// import kcrafts from '../../../src/assets/mockup-kcrafts.webp';
+// import dynamic from '../../../src/assets/mockup-dynamic-equine.webp';
+// import dndivination from '../../../src/assets/mockup-dndivination.webp';
+// import blueShamrock from '../../../src/assets/mockup-blue-shamrock.webp';
+
+import tornjak from '../../../src/assets/web-design-porfolio-kcrafts.webp';
+import tornjakTwo from '../../../src/assets/web-design-porfolio-s6ranch.webp';
+import kcrafts from '../../../src/assets/web-design-porfolio-dynequine.webp';
+import dynamic from '../../../src/assets/web-design-porfolio-tornjak.webp';
+import dndivination from '../../../src/assets/web-design-porfolio-bsf.webp';
+import blueShamrock from '../../../src/assets/web-design-porfolio-dndivination.webp';
+
 import { ArrowLeft } from "@/ui/icons/arrow-left";
 import { ArrowRight } from "@/ui/icons/arrow-right";
 
@@ -67,7 +75,7 @@ export default function Carousel() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
                 }

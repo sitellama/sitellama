@@ -3,89 +3,92 @@
 @tailwind utilities;
 
 @layer components {
-    p {
-        @apply text-base;
-    }
+  p {
+    @apply text-base;
+  }
 
-    h2 {
-        @apply text-5xl font-extrabold text-brand-blue;
-    }
+  h2 {
+    @apply text-5xl font-extrabold text-brand-blue;
+  }
 
-    h3 {
-        @apply text-brand-purple uppercase;
-    }
+  h3 {
+    @apply text-brand-purple uppercase;
+  }
 
-    .btn {
-        @apply inline-block mt-8 py-4 md:px-8 w-full md:w-fit leading-none font-bold rounded-full hover:scale-105 transition-transform;
-    }
+  .max-content {
+    @apply w-[95%] max-w-[1200px] mx-auto;
+  }
 
-    .btn-arrow-white-right {
-        @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-svg fill-red-300 after:inline-block after:pl-4 after:align-middle hover:scale-105;
-    }
+  .btn {
+    @apply inline-block mt-8 py-4 md:px-8 w-full md:w-fit leading-none font-bold rounded-full hover:scale-105 transition-transform;
+  }
 
-    .btn-arrow-white-left {
-        @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-svg fill-red-300 after:inline-block after:pl-4 after:align-middle hover:scale-105 rotate-180;
-    }
+  .btn-arrow-white-right {
+    @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-svg fill-red-300 after:inline-block after:pl-4 after:align-middle hover:scale-105;
+  }
 
-    .btn-prev {
-        @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-svg after:inline-block after:pl-4 after:align-middle hover:scale-105 transition-transform;
-    }
+  .btn-arrow-white-left {
+    @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-svg fill-red-300 after:inline-block after:pl-4 after:align-middle hover:scale-105 rotate-180;
+  }
+
+  .btn-prev {
+    @apply inline-block w-full md:w-fit md:px-8 py-4 rounded-full leading-none mt-8 font-bold after:content-arrow-svg after:inline-block after:pl-4 after:align-middle hover:scale-105 transition-transform;
+  }
 }
 
 .slick-slide {
-    /* @apply m-auto px-2 w-[180px]; */
-    @apply px-2 w-[350px];
+  @apply px-2 md:px-8 w-[836px];
 }
 
 .slick-slide img {
-    @apply w-max;
+  @apply w-max;
 }
 
 .slick-track {
-    @apply flex;
+  @apply flex;
 }
 
 /* raleway-regular - latin */
 @font-face {
-    font-display: swap;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src: url('@/assets/fonts/raleway-v34-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@/assets/fonts/raleway-v34-latin-regular.woff2") format("woff2");
 }
 
 /* raleway-600 - latin */
 @font-face {
-    font-display: swap;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    src: url('@/assets/fonts/raleway-v34-latin-600.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: url("@/assets/fonts/raleway-v34-latin-600.woff2") format("woff2");
 }
 
 /* inter-regular - latin */
 @font-face {
-    font-display: swap;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('@/assets/fonts/inter-v13-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@/assets/fonts/inter-v13-latin-regular.woff2") format("woff2");
 }
 
 /* montserrat-regular - latin */
 @font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('@/assets/fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@/assets/fonts/montserrat-v26-latin-regular.woff2") format("woff2");
 }
 
 /* montserrat-700 - latin */
 @font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: url('@/assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("@/assets/fonts/montserrat-v26-latin-700.woff2") format("woff2");
 }
